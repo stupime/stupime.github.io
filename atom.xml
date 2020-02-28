@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei</title>
-    <updated>2020-02-28T07:35:50.945Z</updated>
+    <updated>2020-02-28T07:44:19.162Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
-    <subtitle>Everyone dies, everyone doesn&apos;t live.</subtitle>
+    <subtitle>UG@CUHK CSE</subtitle>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei</rights>
