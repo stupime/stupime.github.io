@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
-    <title>Wang Wei-UG@CUHK CSE</title>
-    <updated>2020-02-28T08:06:55.253Z</updated>
+    <title>Wang Wei</title>
+    <updated>2020-02-28T08:37:58.274Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Wang Wei-UG@CUHK CSE</rights>
+    <rights>All rights reserved 2020, Wang Wei</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://stupime.github.io/post/hello-gridea/</id>
