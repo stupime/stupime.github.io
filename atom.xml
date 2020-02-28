@@ -2,13 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei</title>
-    <updated>2020-02-28T09:01:34.001Z</updated>
+    <updated>2020-02-28T10:20:21.572Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei</rights>
+    <entry>
+        <title type="html"><![CDATA[Reflection on codeforces round 624 div3]]></title>
+        <id>https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/</id>
+        <link href="https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/">
+        </link>
+        <updated>2020-02-28T09:04:03.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="mathematical-induction">mathematical induction:</h2>
+<ul>
+<li>think about what iff of the goal is.<br>
+eg. to connect two placse via a road, the iff is that every point of the road functions well.</li>
+<li>select loop range<br>
+eg.use mathematical induction to find possible max range for a iterating var</li>
+</ul>
+<h2 id="consider-problem-in-two-ways">consider problem in two ways:</h2>
+<ul>
+<li>
+<p>operation</p>
+</li>
+<li>
+<p>outcome</p>
+<p>choose the easiest one<br>
+eg.<br>
+to find min nunm of operations to achieve some goal, we could either try diff operations until satisfying the gaol and update min during process<br>
+or directly find the outcome set of goal, and find min within it<br>
+one point to take care is carefully selecting loop range based on the goal and mathematical induction</p>
+</li>
+</ul>
+<h2 id="wrong-answer">Wrong answer</h2>
+<ul>
+<li>check goal</li>
+<li>check output format</li>
+<li>check logic<br>
+#especially the ifs think twice about its condition, sequence and nested structure</li>
+</ul>
+<h2 id="runtime-error">Runtime error</h2>
+<ul>
+<li>divide 0</li>
+<li>arr index out of bound</li>
+<li>no free for malloc</li>
+</ul>
+<h2 id="time-limit-exceed">Time limit exceed:</h2>
+<ul>
+<li>
+<p>lack some possibilities which cause a infinite loop or recusion</p>
+<ul>
+<li>code after list all possibilities and logic</li>
+</ul>
+</li>
+<li>
+<p>use dynamic programming to change the calculating order from repetitive manner to accumulating manner.</p>
+<ul>
+<li>add/multiply repetitive/mathmatically-related part: scan a word with several times stopping at random position in th word, count total read times for each letter in the word</li>
+<li>we could add from left to right, every time reach stopping point, use another for loop to add the times at this stop from beginning to current stop
+<ul>
+<li>O(n^2)</li>
+<li>or scan from right to left add counter(0 at first) for each letter, uppon reaching stop, counter += times of this stop</li>
+<li>O(n)</li>
+</ul>
+</li>
+<li>similarly, calculate sum of bitwidth of 1-n
+<ul>
+<li>calculate n's bidwidth O(lgn) and use math knowledge get sum it's complex and may use power func</li>
+<li>from 1 to n, initialize 1's bitwidth d as 1, every num get its bitwidth from d_i/2 +1as add its bitwidth</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="string-initialization">string initialization</h2>
+<ul>
+<li>char * arr  = malloc(arr,n+1);  #must malloc before scanf or fgets,ow                                                         #seg fault</li>
+<li>char arr[n+1]      #must use n+1 because of the ending char<br>
+#consider arr index out of bound or out of str length, former will seg fault/runtime error, latter will retrieve unknown value</li>
+<li>memset(arr, 0, n*sizeofarr[0])<br>
+could be used to set all elements to 0 or some char eg'.', but cant be used to set all to an int value eg.1</li>
+<li>fgets(arr,n+3,fp/stdin)
+<ul>
+<li>n+3 for the ending \0 and \n</li>
+<li>due to \n strlen for fgetsed arr should minus 1</li>
+<li>read the whole line, not like scanf will end at 1st space or tab</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://stupime.github.io/post/hello-gridea/</id>

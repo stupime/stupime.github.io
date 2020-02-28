@@ -175,7 +175,7 @@
                     <article class="post-wrap">
                         <header class="post-header">
                             <h1 class="post-title">
-                                Hello Gridea
+                                Reflection on codeforces round 624 div3
                             </h1>
                             
                                 <!--en-->
@@ -185,17 +185,25 @@
                                         Wang Wei
                                     </a>
                                     <span class="post-time">
-                                Date: <a href="#">2018-12-12</a>
+                                Date: <a href="#">2020-02-28</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">1.0
+                                    href="#">2.7
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">298</a></span>
+                                    <span class="post-words">words:<a href="#">437</a></span>
                                     
                                         <span class="post-category">
                                 Category:
                                 
-                                <a href="https://stupime.github.io/tag/RyhPjrQG_/">Gridea</a>
+                                <a href="https://stupime.github.io/tag/K_LHyyhCy/">string</a>
+                                
+                                <a href="https://stupime.github.io/tag/slUWfvlzrP/">c</a>
+                                
+                                <a href="https://stupime.github.io/tag/mPipqAiCKO/">time limit exceed</a>
+                                
+                                <a href="https://stupime.github.io/tag/NjOAMWI800/">tle</a>
+                                
+                                <a href="https://stupime.github.io/tag/Br7HmpQJtV/">philosophy</a>
                                 
                             </span>
                                         
@@ -203,27 +211,83 @@
                                 
                         </header>
                         <div class="post-content">
-                            <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                            <h2 id="mathematical-induction">mathematical induction:</h2>
+<ul>
+<li>think about what iff of the goal is.<br>
+eg. to connect two placse via a road, the iff is that every point of the road functions well.</li>
+<li>select loop range<br>
+eg.use mathematical induction to find possible max range for a iterating var</li>
+</ul>
+<h2 id="consider-problem-in-two-ways">consider problem in two ways:</h2>
+<ul>
+<li>
+<p>operation</p>
+</li>
+<li>
+<p>outcome</p>
+<p>choose the easiest one<br>
+eg.<br>
+to find min nunm of operations to achieve some goal, we could either try diff operations until satisfying the gaol and update min during process<br>
+or directly find the outcome set of goal, and find min within it<br>
+one point to take care is carefully selecting loop range based on the goal and mathematical induction</p>
+</li>
+</ul>
+<h2 id="wrong-answer">Wrong answer</h2>
+<ul>
+<li>check goal</li>
+<li>check output format</li>
+<li>check logic<br>
+#especially the ifs think twice about its condition, sequence and nested structure</li>
+</ul>
+<h2 id="runtime-error">Runtime error</h2>
+<ul>
+<li>divide 0</li>
+<li>arr index out of bound</li>
+<li>no free for malloc</li>
+</ul>
+<h2 id="time-limit-exceed">Time limit exceed:</h2>
+<ul>
+<li>
+<p>lack some possibilities which cause a infinite loop or recusion</p>
+<ul>
+<li>code after list all possibilities and logic</li>
+</ul>
+</li>
+<li>
+<p>use dynamic programming to change the calculating order from repetitive manner to accumulating manner.</p>
+<ul>
+<li>add/multiply repetitive/mathmatically-related part: scan a word with several times stopping at random position in th word, count total read times for each letter in the word</li>
+<li>we could add from left to right, every time reach stopping point, use another for loop to add the times at this stop from beginning to current stop
+<ul>
+<li>O(n^2)</li>
+<li>or scan from right to left add counter(0 at first) for each letter, uppon reaching stop, counter += times of this stop</li>
+<li>O(n)</li>
+</ul>
+</li>
+<li>similarly, calculate sum of bitwidth of 1-n
+<ul>
+<li>calculate n's bidwidth O(lgn) and use math knowledge get sum it's complex and may use power func</li>
+<li>from 1 to n, initialize 1's bitwidth d as 1, every num get its bitwidth from d_i/2 +1as add its bitwidth</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="string-initialization">string initialization</h2>
+<ul>
+<li>char * arr  = malloc(arr,n+1);  #must malloc before scanf or fgets,ow                                                         #seg fault</li>
+<li>char arr[n+1]      #must use n+1 because of the ending char<br>
+#consider arr index out of bound or out of str length, former will seg fault/runtime error, latter will retrieve unknown value</li>
+<li>memset(arr, 0, n*sizeofarr[0])<br>
+could be used to set all elements to 0 or some char eg'.', but cant be used to set all to an int value eg.1</li>
+<li>fgets(arr,n+3,fp/stdin)
+<ul>
+<li>n+3 for the ending \0 and \n</li>
+<li>due to \n strlen for fgetsed arr should minus 1</li>
+<li>read the whole line, not like scanf will end at 1st space or tab</li>
+</ul>
+</li>
+</ul>
 
                         </div>
                         
@@ -231,7 +295,12 @@
                                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E7%89%B9%E6%80%A7">特性👇</a></li>
+<li><a href="#mathematical-induction">mathematical induction:</a></li>
+<li><a href="#consider-problem-in-two-ways">consider problem in two ways:</a></li>
+<li><a href="#wrong-answer">Wrong answer</a></li>
+<li><a href="#runtime-error">Runtime error</a></li>
+<li><a href="#time-limit-exceed">Time limit exceed:</a></li>
+<li><a href="#string-initialization">string initialization</a></li>
 </ul>
 </li>
 </ul>
@@ -249,7 +318,7 @@
 
                                             <p class="copyright-item">
                                                 <span>Permalink:</span>
-                                                <span><a href="https://stupime.github.io/post/hello-gridea/">https://stupime.github.io/post/hello-gridea/</a></span>
+                                                <span><a href="https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/">https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/</a></span>
                                             </p>
 
                                             <p class="copyright-item">
@@ -264,13 +333,9 @@
                                                         <span style="margin-right:15px">
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
-                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/hello-gridea/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/hello-gridea/&sharesource=qzone&title=Hello Gridea&pics=https://stupime.github.io/images/avatar.png?v=1582885217812&summary=&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
-✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
-"><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/hello-gridea/&sharesource=weibo&title=Hello Gridea + " - " + &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
-✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
-&pic="https://stupime.github.io/images/avatar.png?v=1582885217812 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/&sharesource=qzone&title=Reflection on codeforces round 624 div3&pics=https://stupime.github.io/images/avatar.png?v=1582885217812&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/&sharesource=weibo&title=Reflection on codeforces round 624 div3 + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1582885217812 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -280,8 +345,24 @@
                                                                         <span class="tag ">
                         
                         
-                        <a href="https://stupime.github.io/tag/RyhPjrQG_/">#
-                                                Gridea
+                        <a href="https://stupime.github.io/tag/K_LHyyhCy/">#
+                                                string
+                                                    </a>
+                                                    
+                        <a href="https://stupime.github.io/tag/slUWfvlzrP/">#
+                                                c
+                                                    </a>
+                                                    
+                        <a href="https://stupime.github.io/tag/mPipqAiCKO/">#
+                                                time limit exceed
+                                                    </a>
+                                                    
+                        <a href="https://stupime.github.io/tag/NjOAMWI800/">#
+                                                tle
+                                                    </a>
+                                                    
+                        <a href="https://stupime.github.io/tag/Br7HmpQJtV/">#
+                                                philosophy
                                                     </a>
                                                     
                                                         
@@ -297,11 +378,11 @@
                                                                                 <!---->
                                                                                 <section class="post-nav">
                                                                                     
-                                                                                        <a class="prev" rel="prev" href="https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/">
-                                                                                            Reflection on codeforces round 624 div3
-                                                                                        </a>
-                                                                                        
                                                                                             
+                                                                                                <a class="next" rel="next" href="https://stupime.github.io/post/hello-gridea/">
+                                                                                                    Hello Gridea
+                                                                                                </a>
+                                                                                                
                                                                                 </section>
                     </article>
                 </div>
