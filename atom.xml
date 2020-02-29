@@ -2,13 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei</title>
-    <updated>2020-02-28T10:58:56.886Z</updated>
+    <updated>2020-02-29T11:17:04.500Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei</rights>
+    <entry>
+        <title type="html"><![CDATA[Daily Eng Learning via Washington Post]]></title>
+        <id>https://stupime.github.io/post/daily-eng-learning-via-washington-post/</id>
+        <link href="https://stupime.github.io/post/daily-eng-learning-via-washington-post/">
+        </link>
+        <updated>2020-02-29T10:53:18.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://www.washingtonpost.com/world/africa/as-coronavirus-reaches-nigeria-africas-most-populous-country-projects-confidence/2020/02/28/02b4422e-5a3d-11ea-8efd-0f904bdd8057_story.html">As coronavirus reaches Nigeria, Africa’s most populous country projects confidence</a></p>
+<ul>
+<li>Unknown/Unfamiliar words/phrases
+<ul>
+<li>
+<p>stymie - hamper/impede/pbstruct 妨碍 eg. stymie business</p>
+</li>
+<li>
+<p>tumble - sudden drop/ roll over and over 猛跌 翻滚 eg. markets tumbled Friday</p>
+</li>
+<li>
+<p>scramble - move/act in a hurry 仓促行动 eg. governments have scrambled to boost their preparednedd</p>
+</li>
+<li>
+<p>resinstated - as itself means re in state 回复 eg. a ban of filghts was reinstated</p>
+</li>
+<li>
+<p>quarantine - isolate for preventing spread of contagious plague 检疫隔离(期) eg. under quarantine</p>
+</li>
+<li>
+<p>douse one's hands in sanitizer<br>
+<img src="https://stupime.github.io/post-images/1582974652849.jfif" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>contain virus's outbreak 遏制病毒爆发</p>
+</li>
+<li>
+<p>anxiety blazed cross local social midea 焦虑在当地媒体迅速蔓延</p>
+</li>
+<li>
+<p>sparking fears the contagion could spread quickly -sparking 导致</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Reflection on codeforces round 624 div3]]></title>
         <id>https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/</id>
