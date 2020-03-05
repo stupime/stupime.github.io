@@ -2,13 +2,120 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei</title>
-    <updated>2020-03-01T16:15:09.030Z</updated>
+    <updated>2020-03-05T18:01:36.374Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei</rights>
+    <entry>
+        <title type="html"><![CDATA[原则阅读笔记（二）]]></title>
+        <id>https://stupime.github.io/post/yuan-ze-yue-du-bi-ji-er/</id>
+        <link href="https://stupime.github.io/post/yuan-ze-yue-du-bi-ji-er/">
+        </link>
+        <updated>2020-03-05T17:30:46.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="我的原则">我的原则</h2>
+<ol>
+<li>诚实不说谎，从学术到人际关系到写作，方方面面。遇到善意谎言的困境可以选择沉默或询问当事人意见</li>
+<li>让家人幸福，从照顾好自己不让家人担心到体贴关心他们到努力学习工作给他们提供更好的生活环境</li>
+<li>时间要有度，从安排好学习进程软硬能力训练时长到劳逸结合定期同家人视频，最大化时间用于自我提升</li>
+<li>不说垃圾话，从日常交谈邮件往来中不说废话到不在pyq或其他平台传播负能量</li>
+<li>人生而平等，从对权钱美貌的平视到性别职业学科各方面的平等尊重</li>
+<li>所为所不为，从积极为不公发声到坚守尊严不能为除家人以外的权或钱或其他任何诱惑便宜机会放弃自尊</li>
+<li>独立之思想，理性对待知乎b站公众号等任何平台上的观点，控制每日信息摄入，拒绝屁股论</li>
+<li>理解和记忆，非语言类知识理解的基础上记忆，对每一个知识点没能理解透彻便应用只会浪费更多时间</li>
+<li>在乎不在乎，家人，计划，时间都是值得在乎的事，他人的评价是否合群不必在乎<br>
+10.不惧怕失败，勇于挑战但要有选择地去尝试最重要的是总结经验</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[原则阅读笔记（一）]]></title>
+        <id>https://stupime.github.io/post/yuan-ze-yue-du-bi-ji-yi/</id>
+        <link href="https://stupime.github.io/post/yuan-ze-yue-du-bi-ji-yi/">
+        </link>
+        <updated>2020-03-05T16:13:10.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>我一生学到的最重要的东西是一种以原则为基础的生活方式，是它帮我发现真相是什么，并据此行动。</li>
+<li>原则是根据性的真理，它构成了行动的基础，通过行动让你实现生命中的愿望。原则可以不断地被应用于类似的情况，以帮助你实现目标。</li>
+<li>我的希望是阅读此书将促使你使你以你以为最合适的方式发现自己的原则，并最好把它们写下来。这样做将使你清楚地知道自己的原则，并更好的理解反思改进彼此。</li>
+</ol>
+<h1 id="这些原则的价值到底有多大取决于你们如何对待他们应由你们自己决定">这些原则的价值到底有多大取决于你们如何对待他们，应由你们自己决定。</h1>
+<ul>
+<li>我想要什么
+<ul>
+<li>千万存款</li>
+<li>非流水线式的工作</li>
+<li>身体健康白天精力充沛，小臂、胸部、背部增肌，增强耐力</li>
+<li>口语流利，日常交流及学术写作无障碍</li>
+<li>心态平和但积极有追求，专注，冷静，能妥善调节压力焦虑转化为动力</li>
+<li>找到对自己最重要的事并能为此放弃其他</li>
+<li>合理利用时间，work hard play hard</li>
+<li>找到漂亮贴心的女朋友</li>
+<li>去想去的地方浪</li>
+<li>买dji Mavic 2 pro</li>
+</ul>
+</li>
+<li>事实是什么
+<ul>
+<li>靠父母提供本科学费生活费基本无存款</li>
+<li>未毕业，major GPA不到3.7（1st honor最低要求）
+<ul>
+<li>编程C++，python未入门</li>
+<li>shell语言不懂</li>
+<li>Linux指令时常需要查</li>
+<li>GitHub/git不会用</li>
+<li>AI相关知识技能不足pytorch未入门</li>
+<li>machine learning基本理论无框架</li>
+<li>死线战士且质量不高</li>
+<li>时常追剧或刷微博pyq消息浪费时间</li>
+<li>遇难有时会沮丧或畏难或浪费大量时间</li>
+</ul>
+</li>
+<li>时常熬夜两三点，偶尔四五点，间或通宵，一睡九十个小时，假期三餐不规律，经常只吃一两顿</li>
+<li>交换以来仅跑步两次，单杠俯卧撑不到五次</li>
+<li>口语磕巴，听力经常听不清</li>
+<li>心态间歇性努力亢奋，间歇性怀疑努力的意义，假期经常自我放纵伴随夜不能寐后悔自责，偶尔放弃自我毫无生机</li>
+<li>交换期间几乎不和女生打交道，虽然不至于见人紧张说不出话但并不是招人喜欢的类型</li>
+<li>已去荷比瑞法新马迪港澳，未去日本、韩国、台湾、澳大利亚、美国、冰岛自由行</li>
+<li>不想花父母的钱买</li>
+</ul>
+</li>
+<li>面对事实，我要如何实现自己的愿望
+<ul>
+<li>每日记账，减少冲动消费，每月控制在3000rmb以内；科研当教授/去美帝当程序员</li>
+<li>学习
+<ul>
+<li>大四每一门专业课拿A</li>
+<li>编程：洛谷试训场用C++和python先把基础题写一遍熟悉语法</li>
+<li>编程：每周参加一次codeforece的比赛并写题解用C++和python各写一遍，用vim</li>
+<li>除了做2003lab，平时使用manjaro</li>
+<li>把自己的作业，pro，编程练习用terminal传到GitHub</li>
+<li>自学Stanford CSI210和吴恩达machine learning课程 以读原著为主，不懂再去看视频</li>
+<li>用cse的gpu训练一些AI model，搭配练习shell</li>
+<li>有任何待办事项之后立即着手去做，有多个要立刻从当前开始排序计划</li>
+<li>每一道编程题最多用时一个小时，作业习题最多每题半个小时，</li>
+</ul>
+</li>
+</ul>
+<h1 id="找官方文档解决问题并记录下来">找官方文档解决问题并记录下来</h1>
+<ul>
+<li>最迟1230躺在床上，早上730起床，排出一个每周三餐表格来避免想去哪里吃饭时的拖延</li>
+<li>排出每周体能训练表，每周至少十公里，引体50次（单次11+），窄距+宽距俯卧撑120（单次宽距30+窄距20+）</li>
+<li>每天背托福/gre听力材料，读一篇Washington post并写每日总结</li>
+<li>制定每周日程表需包含以上英语、体能、饮食、洗漱、收拾宿舍、洗衣服、编程AI学习及阅读写作，让自己有事可干有章可循，减少胡思乱想的时间，如仍胡思乱想，记录下来。</li>
+</ul>
+<h1 id="最重要的事让家人过上幸福无忧的日子">最重要的事：让家人过上幸福无忧的日子</h1>
+<ul>
+<li>说话看着对方眼睛/鼻子，不要总想着什么时候结束聊天，仔细听对方的话和其中的情感，单刀直入，想好了再回复/不回复/开玩笑闪开话题</li>
+<li>攒钱/自己赚钱（毕业后）</li>
+<li>攒钱/自己赚钱（毕业后）</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Daily Eng Learning via Washington Post Mar 1st, 2020]]></title>
         <id>https://stupime.github.io/post/daily-eng-learning-via-washington-post-mar-1st-2020/</id>
