@@ -90,7 +90,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1583942595035" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1583981662027" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -109,7 +109,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1583942595035" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1583981662027" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -175,7 +175,7 @@
                     <article class="post-wrap">
                         <header class="post-header">
                             <h1 class="post-title">
-                                Mar 11, 2020 how i fail to add &#34;set private&#34; feature
+                                Manjaro struggling comedies
                             </h1>
                             
                                 <!--en-->
@@ -188,9 +188,9 @@
                                 Date: <a href="#">2020-03-11</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">1.1
+                                    href="#">2.4
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">169</a></span>
+                                    <span class="post-words">words:<a href="#">391</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -206,16 +206,89 @@
                         </header>
                         <div class="post-content">
                             
-                            <h2 id="fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-which-took-me-over-15-hr">Fail to add private post feature to gridea following an unmerged pull request's commit history which took me over 1.5 hr.</h2>
-<p>It's totally time consuming and in vain, the lessons are</p>
+                            <p>//  the figure in thumbnail is one of my life instructors 안재홍(Zaihong AN) in &quot;please answer 1988&quot;. whom i'd like to refer to as harecore winker.<br>
+Mar 11, 2020</p>
+<h2 id="problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</h2>
+<ul>
+<li>
+<p>Background:</p>
+<ul>
+<li>sys: manjaro</li>
+<li>objective: gridea installation, setup sync cross win10 gridea and manjaro gridea, add set private feature</li>
+<li>given: gridea offical github installation instruction plus an unmerged pull request which added the goal feature</li>
+</ul>
+</li>
+<li>
+<p>Outcoume:</p>
+<ul>
+<li>installation success</li>
+<li>no support for sync cross win10 and linux,</li>
+<li>but could use setting path in gridea to access win10 gridea folders(<strong>only for dual boot users</strong>)</li>
+<li>fail to add private post feature following pr commits</li>
+</ul>
+</li>
+<li>
+<p>Analysis:</p>
+<ul>
+<li>possible unsuccessful reasons:</li>
+<li>pr not support for linux</li>
+<li>cant download code so have to manually modify one by one thus making it easier to miss sth</li>
+<li>file modification cross dual systems may cause problems</li>
+</ul>
+</li>
+<li>
+<p>Conclusion<br>
+It's totally time consuming and in vain to modify code by eyechecking each file, the lessons are</p>
 <ul>
 <li>not waste time on modifying files one by one using file comparison given by github.</li>
 <li>consider clearly if u need this feature for gridea it already offers hiden feature which serves similarly as setting private</li>
 </ul>
-<p>one thing to cheer for is i could access my gridea settings and files via dual root system on manjaro which means i could achieve sync in this weird manner, anyway i could write blogs on manjaro since then on.<br>
-the cost for this is the high speed fan while starting gridea and syncing github pgs, however, this is much more acceptable than that in win...<br>
-see u next century, windows!<br>
-ps: the figure in thumbnail is one of my idols Zhengfeng Jin in &quot;please answer 1988&quot;. I'd like to refer to this img as harecore winker.</p>
+</li>
+</ul>
+<p>Mar 12, 2020</p>
+<h2 id="problem-2-right-click-at-home-screen-then-change-mouse-actions-resulting-in-no-access-to-config-desktop-anymore">Problem 2: Right click at home screen, then change mouse actions, resulting in no access to config desktop anymore</h2>
+<ul>
+<li>Background:
+<ul>
+<li>plasma kde manjaro, problem above</li>
+<li>Objective:get config dekstop option back</li>
+</ul>
+</li>
+<li>Solution<br>
+cd ~/.config<br>
+mv plasma-org.kde.plasma.desktop-appletsrc plasma-org.kde.plasma.desktop-appletsrc-old<br>
+mv plasmashellrc ~/.config/plasmashellrc-old<br>
+// above will help all desktop seetings to default</li>
+</ul>
+<h2 id="problem-3-storage-not-enough">Problem 3: storage not enough</h2>
+<ul>
+<li>Bg: dual system allocate 78.9G to manjaro, use 85%</li>
+<li>Sol:
+<ul>
+<li>check filefilght in properties of allocated hard drive</li>
+<li>find gray part path which means unused/ $ du -sh /var/cache/pacman/pkg/</li>
+<li>rm them</li>
+<li>for my case, its because no cleaning pacman cache since start using manjaro, so<br>
+sudo pacman -Sc  //this cleans all uninstalled pkgs<br>
+sudo pacman -Scc // remove all pkgs regardless of installation status</li>
+</ul>
+</li>
+<li>Further improvement: auto clean<br>
+sudo mkdir /etc/pacman.d/hooks<br>
+sudo vim /etc/pacman.d/hooks/clean_package_cache.hook<br>
+paste below code<br>
+[Trigger]<br>
+Operation = Upgrade<br>
+Operation = Install<br>
+Operation = Remove<br>
+Type = Package<br>
+Target = *<br>
+[Action]<br>
+Description = Cleaning pacman cache...<br>
+When = PostTransaction<br>
+Exec = /usr/bin/paccache -r<br>
+save.</li>
+</ul>
 
                             
                             
@@ -225,7 +298,9 @@ ps: the figure in thumbnail is one of my idols Zhengfeng Jin in &quot;please ans
                                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-which-took-me-over-15-hr">Fail to add private post feature to gridea following an unmerged pull request's commit history which took me over 1.5 hr.</a></li>
+<li><a href="#problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</a></li>
+<li><a href="#problem-2-right-click-at-home-screen-then-change-mouse-actions-resulting-in-no-access-to-config-desktop-anymore">Problem 2: Right click at home screen, then change mouse actions, resulting in no access to config desktop anymore</a></li>
+<li><a href="#problem-3-storage-not-enough">Problem 3: storage not enough</a></li>
 </ul>
 </li>
 </ul>
@@ -259,8 +334,8 @@ ps: the figure in thumbnail is one of my idols Zhengfeng Jin in &quot;please ans
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=qzone&title=Mar 11, 2020 how i fail to add &#34;set private&#34; feature&pics=https://stupime.github.io/images/avatar.png?v=1583942595035&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=weibo&title=Mar 11, 2020 how i fail to add &#34;set private&#34; feature + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1583942595035 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=qzone&title=Manjaro struggling comedies&pics=https://stupime.github.io/images/avatar.png?v=1583981662027&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=weibo&title=Manjaro struggling comedies + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1583981662027 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -374,7 +449,7 @@ ps: the figure in thumbnail is one of my idols Zhengfeng Jin in &quot;please ans
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1583942595035);
+                    newDate.setTime(1583981662027);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>

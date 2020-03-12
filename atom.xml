@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei</title>
-    <updated>2020-03-11T16:03:16.961Z</updated>
+    <updated>2020-03-12T02:54:26.252Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -10,21 +10,94 @@
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei</rights>
     <entry>
-        <title type="html"><![CDATA[Mar 11, 2020 how i fail to add "set private" feature]]></title>
+        <title type="html"><![CDATA[Manjaro struggling comedies]]></title>
         <id>https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/</id>
         <link href="https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/">
         </link>
         <updated>2020-03-11T15:44:56.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-which-took-me-over-15-hr">Fail to add private post feature to gridea following an unmerged pull request's commit history which took me over 1.5 hr.</h2>
-<p>It's totally time consuming and in vain, the lessons are</p>
+        <content type="html"><![CDATA[<p>//  the figure in thumbnail is one of my life instructors 안재홍(Zaihong AN) in &quot;please answer 1988&quot;. whom i'd like to refer to as harecore winker.<br>
+Mar 11, 2020</p>
+<h2 id="problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</h2>
+<ul>
+<li>
+<p>Background:</p>
+<ul>
+<li>sys: manjaro</li>
+<li>objective: gridea installation, setup sync cross win10 gridea and manjaro gridea, add set private feature</li>
+<li>given: gridea offical github installation instruction plus an unmerged pull request which added the goal feature</li>
+</ul>
+</li>
+<li>
+<p>Outcoume:</p>
+<ul>
+<li>installation success</li>
+<li>no support for sync cross win10 and linux,</li>
+<li>but could use setting path in gridea to access win10 gridea folders(<strong>only for dual boot users</strong>)</li>
+<li>fail to add private post feature following pr commits</li>
+</ul>
+</li>
+<li>
+<p>Analysis:</p>
+<ul>
+<li>possible unsuccessful reasons:</li>
+<li>pr not support for linux</li>
+<li>cant download code so have to manually modify one by one thus making it easier to miss sth</li>
+<li>file modification cross dual systems may cause problems</li>
+</ul>
+</li>
+<li>
+<p>Conclusion<br>
+It's totally time consuming and in vain to modify code by eyechecking each file, the lessons are</p>
 <ul>
 <li>not waste time on modifying files one by one using file comparison given by github.</li>
 <li>consider clearly if u need this feature for gridea it already offers hiden feature which serves similarly as setting private</li>
 </ul>
-<p>one thing to cheer for is i could access my gridea settings and files via dual root system on manjaro which means i could achieve sync in this weird manner, anyway i could write blogs on manjaro since then on.<br>
-the cost for this is the high speed fan while starting gridea and syncing github pgs, however, this is much more acceptable than that in win...<br>
-see u next century, windows!<br>
-ps: the figure in thumbnail is one of my idols Zhengfeng Jin in &quot;please answer 1988&quot;. I'd like to refer to this img as harecore winker.</p>
+</li>
+</ul>
+<p>Mar 12, 2020</p>
+<h2 id="problem-2-right-click-at-home-screen-then-change-mouse-actions-resulting-in-no-access-to-config-desktop-anymore">Problem 2: Right click at home screen, then change mouse actions, resulting in no access to config desktop anymore</h2>
+<ul>
+<li>Background:
+<ul>
+<li>plasma kde manjaro, problem above</li>
+<li>Objective:get config dekstop option back</li>
+</ul>
+</li>
+<li>Solution<br>
+cd ~/.config<br>
+mv plasma-org.kde.plasma.desktop-appletsrc plasma-org.kde.plasma.desktop-appletsrc-old<br>
+mv plasmashellrc ~/.config/plasmashellrc-old<br>
+// above will help all desktop seetings to default</li>
+</ul>
+<h2 id="problem-3-storage-not-enough">Problem 3: storage not enough</h2>
+<ul>
+<li>Bg: dual system allocate 78.9G to manjaro, use 85%</li>
+<li>Sol:
+<ul>
+<li>check filefilght in properties of allocated hard drive</li>
+<li>find gray part path which means unused/ $ du -sh /var/cache/pacman/pkg/</li>
+<li>rm them</li>
+<li>for my case, its because no cleaning pacman cache since start using manjaro, so<br>
+sudo pacman -Sc  //this cleans all uninstalled pkgs<br>
+sudo pacman -Scc // remove all pkgs regardless of installation status</li>
+</ul>
+</li>
+<li>Further improvement: auto clean<br>
+sudo mkdir /etc/pacman.d/hooks<br>
+sudo vim /etc/pacman.d/hooks/clean_package_cache.hook<br>
+paste below code<br>
+[Trigger]<br>
+Operation = Upgrade<br>
+Operation = Install<br>
+Operation = Remove<br>
+Type = Package<br>
+Target = *<br>
+[Action]<br>
+Description = Cleaning pacman cache...<br>
+When = PostTransaction<br>
+Exec = /usr/bin/paccache -r<br>
+save.</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
