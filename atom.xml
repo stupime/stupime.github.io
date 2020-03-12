@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Welcome to Wang Wei&apos;s Homepage - Stupime</title>
-    <updated>2020-03-12T05:36:30.131Z</updated>
+    <updated>2020-03-12T12:37:22.103Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -16,6 +16,7 @@
         </link>
         <updated>2020-03-11T15:44:56.000Z</updated>
         <content type="html"><![CDATA[<p>//  the figure in thumbnail is one of my life instructors 안재홍(Zaihong AN) in &quot;please answer 1988&quot;. whom i'd like to refer to as harecore winker.<br>
+Last update: 20:08, Mar 12, 2020<br>
 Mar 11, 2020</p>
 <h2 id="problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</h2>
 <ul>
@@ -97,6 +98,63 @@ Description = Cleaning pacman cache...<br>
 When = PostTransaction<br>
 Exec = /usr/bin/paccache -r<br>
 save.</li>
+</ul>
+<h2 id="debug-using-gdbthe-gnu-project-dbugger">Debug using GDB(The GNU Project Dbugger)</h2>
+<ul>
+<li>Background:
+<ul>
+<li>time-consuming to debug by print-compile-exec-check-print cycle;</li>
+<li>sometimes unable locate core dump in code</li>
+</ul>
+</li>
+<li>Objective:
+<ul>
+<li>enhance debug process w.o. complex setup</li>
+</ul>
+</li>
+<li>Tool: GDB
+<ul>
+<li>support C, C++,Go, Fortan, OpenCL</li>
+<li>easy to install and use</li>
+</ul>
+</li>
+<li>Instruction
+<ul>
+<li>Installation<br>
+gdb -v // check if already installed<br>
+sudo pacman -S gdb //installation</li>
+<li>Use
+<ul>
+<li>Given source code a.cpp/a.c<br>
+g++(gcc) a.cpp(a.c) -g -o a //include -g for gdb<br>
+./a<br>
+gdb a<br>
+will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
+<li>gdb commands
+<ul>
+<li>b num/func_name    // suspend program at line = num/ specified func</li>
+<li>run         //run a in gdb</li>
+<li>step || s       // step into the function(if any) in next line</li>
+<li>next || s                               //exec next line not into func</li>
+<li>until num/func_name            // exec until linenum =num/specified func</li>
+<li>list  || l            // list source code</li>
+<li>print var_name || p/d var_name<br>
+// print var value in singed int if p/d; unsigned int if p/u,similar for p/c,x,f</li>
+<li>backtree || bt                    // show trace of current position which funcs are in for now</li>
+<li>kill                  //stop exec</li>
+<li>quit                  //exit gdb</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Usage
+<ul>
+<li>reduce print-compile-exec cycle by simply print</li>
+<li>find core dump position by simply run</li>
+</ul>
+</li>
 </ul>
 ]]></content>
     </entry>

@@ -90,7 +90,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1583991386711" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1584016640104" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -109,7 +109,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1583991386711" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1584016640104" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -188,9 +188,9 @@
                                 Date: <a href="#">2020-03-11</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">2.4
+                                    href="#">3.8
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">391</a></span>
+                                    <span class="post-words">words:<a href="#">605</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -211,6 +211,7 @@
                         <div class="post-content">
                             
                             <p>//  the figure in thumbnail is one of my life instructors 안재홍(Zaihong AN) in &quot;please answer 1988&quot;. whom i'd like to refer to as harecore winker.<br>
+Last update: 20:08, Mar 12, 2020<br>
 Mar 11, 2020</p>
 <h2 id="problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</h2>
 <ul>
@@ -293,6 +294,63 @@ When = PostTransaction<br>
 Exec = /usr/bin/paccache -r<br>
 save.</li>
 </ul>
+<h2 id="debug-using-gdbthe-gnu-project-dbugger">Debug using GDB(The GNU Project Dbugger)</h2>
+<ul>
+<li>Background:
+<ul>
+<li>time-consuming to debug by print-compile-exec-check-print cycle;</li>
+<li>sometimes unable locate core dump in code</li>
+</ul>
+</li>
+<li>Objective:
+<ul>
+<li>enhance debug process w.o. complex setup</li>
+</ul>
+</li>
+<li>Tool: GDB
+<ul>
+<li>support C, C++,Go, Fortan, OpenCL</li>
+<li>easy to install and use</li>
+</ul>
+</li>
+<li>Instruction
+<ul>
+<li>Installation<br>
+gdb -v // check if already installed<br>
+sudo pacman -S gdb //installation</li>
+<li>Use
+<ul>
+<li>Given source code a.cpp/a.c<br>
+g++(gcc) a.cpp(a.c) -g -o a //include -g for gdb<br>
+./a<br>
+gdb a<br>
+will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
+<li>gdb commands
+<ul>
+<li>b num/func_name    // suspend program at line = num/ specified func</li>
+<li>run         //run a in gdb</li>
+<li>step || s       // step into the function(if any) in next line</li>
+<li>next || s                               //exec next line not into func</li>
+<li>until num/func_name            // exec until linenum =num/specified func</li>
+<li>list  || l            // list source code</li>
+<li>print var_name || p/d var_name<br>
+// print var value in singed int if p/d; unsigned int if p/u,similar for p/c,x,f</li>
+<li>backtree || bt                    // show trace of current position which funcs are in for now</li>
+<li>kill                  //stop exec</li>
+<li>quit                  //exit gdb</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Usage
+<ul>
+<li>reduce print-compile-exec cycle by simply print</li>
+<li>find core dump position by simply run</li>
+</ul>
+</li>
+</ul>
 
                             
                             
@@ -305,6 +363,7 @@ save.</li>
 <li><a href="#problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</a></li>
 <li><a href="#problem-2-right-click-at-home-screen-then-change-mouse-actions-resulting-in-no-access-to-config-desktop-anymore">Problem 2: Right click at home screen, then change mouse actions, resulting in no access to config desktop anymore</a></li>
 <li><a href="#problem-3-storage-not-enough">Problem 3: storage not enough</a></li>
+<li><a href="#debug-using-gdbthe-gnu-project-dbugger">Debug using GDB(The GNU Project Dbugger)</a></li>
 </ul>
 </li>
 </ul>
@@ -338,8 +397,8 @@ save.</li>
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=qzone&title=Manjaro struggling comedies&pics=https://stupime.github.io/images/avatar.png?v=1583991386711&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=weibo&title=Manjaro struggling comedies + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1583991386711 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=qzone&title=Manjaro struggling comedies&pics=https://stupime.github.io/images/avatar.png?v=1584016640104&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=weibo&title=Manjaro struggling comedies + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584016640104 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -461,7 +520,7 @@ save.</li>
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1583991386711);
+                    newDate.setTime(1584016640104);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
