@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
-    <title>Welcome to Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-13T02:49:24.798Z</updated>
+    <title>Wang Wei&apos;s Homepage</title>
+    <updated>2020-03-13T02:51:59.175Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Welcome to Wang Wei&apos;s Homepage</rights>
+    <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
     <entry>
         <title type="html"><![CDATA[My collections on research, learning]]></title>
         <id>https://stupime.github.io/post/my-collections-on-research-learning/</id>
