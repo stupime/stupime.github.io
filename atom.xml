@@ -2,13 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Welcome to Wang Wei&apos;s Homepage - Stupime</title>
-    <updated>2020-03-12T12:39:21.051Z</updated>
+    <updated>2020-03-13T01:46:26.080Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Welcome to Wang Wei&apos;s Homepage - Stupime</rights>
+    <entry>
+        <title type="html"><![CDATA[My collections on research, learning]]></title>
+        <id>https://stupime.github.io/post/my-collections-on-research-learning/</id>
+        <link href="https://stupime.github.io/post/my-collections-on-research-learning/">
+        </link>
+        <updated>2020-03-13T01:20:02.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="research">research</h2>
+<ol>
+<li><a href="http://www.cse.ust.hk/~dimitris/Instructions%20for%20PhD%20Students.pdf">instructions for phd students</a> by <a href="https://www.cse.ust.hk/faculty/dimitris/">Dimitris Papadias</a> -100%</li>
+<li><a href="https://yuandong-tian.com/five_year_summary_of_PhD.pdf">5-year-summary of phd</a> by <a href="https://yuandong-tian.com/">Yuandong Tian</a>- 0%</li>
+<li><a href="http://www.houxiaodi.com/assets/misc/manual.pdf">manual for survival in sjtu</a> by <a href="http://www.houxiaodi.com/">Xiaodi Hou</a> - 2.25/3.5</li>
+<li><a href="https://www.zhihu.com/question/51863955/answer/127888709">research directions for cv</a> by <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a> -100%</li>
+</ol>
+<h2 id="mathematical-stuff-by-dahua-lin">mathematical stuff by Dahua Lin</h2>
+<ol start="4">
+<li><a href="https://dahuasky.wordpress.com/2009/01/22/%E5%9C%A8%E6%95%B0%E5%AD%A6%E7%9A%84%E6%B5%B7%E6%B4%8B%E4%B8%AD%E9%A3%98%E8%8D%A1/">dive in the mathmatical sea</a> by Dahua Lin(http://dahualin.org/) -0%</li>
+<li><a href="https://blog.csdn.net/hsslx/article/details/17074829">Dahua's new thinking on math</a> by Dahua Lin(http://dahualin.org/) -0%</li>
+<li><a href="https://www.douban.com/note/42142976/">Dahua's suggestions on math reference books</a> by Dahua Lin(http://dahualin.org/) -0%</li>
+</ol>
+<h2 id="multi-task-management">multi-task management</h2>
+<p>1.<a href="https://www.zhihu.com/question/374401049/answer/1055275763">concrete solution to handle multiple tasks efficiently</a> by <a href="https://yuandong-tian.com/">Yuandong Tian</a>- 100%</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Manjaro struggling comedies]]></title>
         <id>https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/</id>
@@ -155,6 +178,27 @@ will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
 <li>find core dump position by simply run</li>
 </ul>
 </li>
+</ul>
+<h2 id="commands-in-manjaro">Commands in manjaro</h2>
+<ul>
+<li>fd:0 - stdin, 1 - stdout, 2 - stderr;</li>
+<li>redirect: &quot;&gt;&quot;</li>
+<li>run in background: terminated by &quot;&amp;&quot;  // useful for ssh connection<br>
+command &gt; output.txt  // means redirect command outuput to output.txt<br>
+command &gt; output.txt  &amp; // means run last cmd in bg<br>
+command &gt; output.txt 2&gt;&amp;1 //means redirect both output and err message to the txt
+<ul>
+<li>close background process
+<ul>
+<li>$pgrep cmd eg. $pgrep wget (return pid)and $kill pid</li>
+<li>$pkill cmd eg. $pkill wget</li>
+<li>$jobs and $kill %jobid</li>
+<li>$fg jobid and $ctrl+c</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>$find path -name expression eg. find . -name *.cpp <strong>to be continued</strong></li>
 </ul>
 ]]></content>
     </entry>

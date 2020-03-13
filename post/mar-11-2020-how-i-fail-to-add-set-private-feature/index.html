@@ -90,7 +90,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1584016757422" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1584063983066" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -109,7 +109,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1584016757422" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1584063983066" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -188,9 +188,9 @@
                                 Date: <a href="#">2020-03-11</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">3.8
+                                    href="#">4.4
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">606</a></span>
+                                    <span class="post-words">words:<a href="#">710</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -355,6 +355,27 @@ will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
 </ul>
 </li>
 </ul>
+<h2 id="commands-in-manjaro">Commands in manjaro</h2>
+<ul>
+<li>fd:0 - stdin, 1 - stdout, 2 - stderr;</li>
+<li>redirect: &quot;&gt;&quot;</li>
+<li>run in background: terminated by &quot;&amp;&quot;  // useful for ssh connection<br>
+command &gt; output.txt  // means redirect command outuput to output.txt<br>
+command &gt; output.txt  &amp; // means run last cmd in bg<br>
+command &gt; output.txt 2&gt;&amp;1 //means redirect both output and err message to the txt
+<ul>
+<li>close background process
+<ul>
+<li>$pgrep cmd eg. $pgrep wget (return pid)and $kill pid</li>
+<li>$pkill cmd eg. $pkill wget</li>
+<li>$jobs and $kill %jobid</li>
+<li>$fg jobid and $ctrl+c</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>$find path -name expression eg. find . -name *.cpp <strong>to be continued</strong></li>
+</ul>
 
                             
                             
@@ -368,6 +389,7 @@ will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
 <li><a href="#problem-2-right-click-at-home-screen-then-change-mouse-actions-resulting-in-no-access-to-config-desktop-anymore">Problem 2: Right click at home screen, then change mouse actions, resulting in no access to config desktop anymore</a></li>
 <li><a href="#problem-3-storage-not-enough">Problem 3: storage not enough</a></li>
 <li><a href="#tools-debug-using-gdbthe-gnu-project-dbugger">Tools: Debug using GDB(The GNU Project Dbugger)</a></li>
+<li><a href="#commands-in-manjaro">Commands in manjaro</a></li>
 </ul>
 </li>
 </ul>
@@ -401,8 +423,8 @@ will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=qzone&title=Manjaro struggling comedies&pics=https://stupime.github.io/images/avatar.png?v=1584016757422&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=weibo&title=Manjaro struggling comedies + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584016757422 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=qzone&title=Manjaro struggling comedies&pics=https://stupime.github.io/images/avatar.png?v=1584063983066&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/&sharesource=weibo&title=Manjaro struggling comedies + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584063983066 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -449,6 +471,10 @@ will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
                                                                                 <!---->
                                                                                 <section class="post-nav">
                                                                                     
+                                                                                        <a class="prev" rel="prev" href="https://stupime.github.io/post/my-collections-on-research-learning/">
+                                                                                            My collections on research, learning
+                                                                                        </a>
+                                                                                        
                                                                                             
                                                                                                 <a class="next" rel="next" href="https://stupime.github.io/post/yuan-ze-yue-du-bi-ji-er/">
                                                                                                     原则阅读笔记（二）
@@ -532,7 +558,7 @@ will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1584016757422);
+                    newDate.setTime(1584063983066);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
