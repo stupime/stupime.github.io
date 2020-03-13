@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-13T07:32:42.866Z</updated>
+    <updated>2020-03-13T09:25:36.779Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -22,7 +22,6 @@ IERG 3310: Computer network<br>
 <strong>ENGG 5103/CMSC 5724</strong>: data mining<br>
 ESTR 4106/CSCI 4180 Intro to cloud computing &amp; storage<br>
 ESTR 4104/CSCI 4160 Distributed and parallel computing<br>
-//above 2 choose 1 for fulfiling elite stream requirement or must select ESTR for ppl next term<br>
 <strong>ENGG 5501: Optimization</strong><br>
 <strong>IERG 5130</strong>Model &amp; algo for ml<br>
 大英<br>
