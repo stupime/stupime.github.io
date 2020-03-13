@@ -2,13 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-13T02:53:10.623Z</updated>
+    <updated>2020-03-13T07:08:21.303Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[Tentative final year class schedule]]></title>
+        <id>https://stupime.github.io/post/tentative-final-year-class-schedule/</id>
+        <link href="https://stupime.github.io/post/tentative-final-year-class-schedule/">
+        </link>
+        <updated>2020-03-13T06:33:22.000Z</updated>
+        <content type="html"><![CDATA[<p>Term 1:<br>
+<strong>IERG 4160</strong>: Image &amp; video processing<br>
+IERG 3310: Computer network<br>
+<strong>FYP1</strong><br>
+<strong>ENGG 5103/CMSC 5724</strong>: data mining<br>
+ESTR 4106/CSCI 4180 Intro to cloud computing &amp; storage<br>
+ESTR 4104/CSCI 4160 Distributed and parallel computing<br>
+<strong>ENGG 5501: Optimization</strong><br>
+<strong>IERG 5130</strong>Model &amp; algo for ml<br>
+大英<br>
+Term 2:<br>
+ESTR 3180: <strong>PPL</strong><br>
+<strong>FYP2</strong><br>
+<strong>CSCI 3320</strong>:ML<br>
+<strong>IERG 5130</strong>Model &amp; algo for ml<br>
+<strong>ELEG 5491</strong>DL (if any)<br>
+<strong>IERG 6130</strong>RL<br>
+<strong>FH</strong><br>
+<strong>大英</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[My collections on research, learning]]></title>
         <id>https://stupime.github.io/post/my-collections-on-research-learning/</id>
