@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-19T01:56:33.612Z</updated>
+    <updated>2020-03-19T09:25:30.709Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -89,7 +89,7 @@ CSCI 4430 Data communication &amp; computer network</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[My collections on research, learning]]></title>
+        <title type="html"><![CDATA[My collections on research, learning, reading]]></title>
         <id>https://stupime.github.io/post/my-collections-on-research-learning/</id>
         <link href="https://stupime.github.io/post/my-collections-on-research-learning/">
         </link>
@@ -103,14 +103,16 @@ CSCI 4430 Data communication &amp; computer network</p>
 </ol>
 <h2 id="mathematical-stuff-by-dahua-lin">mathematical stuff by Dahua Lin</h2>
 <ol start="4">
-<li><a href="https://dahuasky.wordpress.com/2009/01/22/%E5%9C%A8%E6%95%B0%E5%AD%A6%E7%9A%84%E6%B5%B7%E6%B4%8B%E4%B8%AD%E9%A3%98%E8%8D%A1/">dive in the mathmatical sea</a> by Dahua Lin(http://dahualin.org/) -0%</li>
-<li><a href="https://blog.csdn.net/hsslx/article/details/17074829">Dahua's new thinking on math</a> by Dahua Lin(http://dahualin.org/) -0%</li>
-<li><a href="https://www.douban.com/note/42142976/">Dahua's suggestions on math reference books</a> by Dahua Lin(http://dahualin.org/) -0%</li>
+<li><a href="https://dahuasky.wordpress.com/2009/01/22/%E5%9C%A8%E6%95%B0%E5%AD%A6%E7%9A%84%E6%B5%B7%E6%B4%8B%E4%B8%AD%E9%A3%98%E8%8D%A1/">dive in the mathmatical sea</a> by <a href="http://dahualin.org/">Dahua Lin</a> -0%</li>
+<li><a href="https://blog.csdn.net/hsslx/article/details/17074829">Dahua's new thinking on math</a> by <a href="http://dahualin.org/">Dahua Lin</a> -0%</li>
+<li><a href="https://www.douban.com/note/42142976/">Dahua's suggestions on math reference books</a> by <a href="http://dahualin.org/">Dahua Lin</a> -0%</li>
 </ol>
 <h2 id="multi-task-management">multi-task management</h2>
 <ol start="7">
 <li><a href="https://www.zhihu.com/question/374401049/answer/1055275763">concrete solution to handle multiple tasks efficiently</a> by <a href="https://yuandong-tian.com/">Yuandong Tian</a>- 100%</li>
 </ol>
+<h2 id="readings">readings</h2>
+<pre><code>* [北京法源寺](https://www.xstt5.com/sanwen/1270/37639.html) -4/75</code></pre>
 ]]></content>
     </entry>
     <entry>
