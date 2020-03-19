@@ -2,13 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-17T10:32:50.294Z</updated>
+    <updated>2020-03-19T01:44:53.443Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[Quotes(chicken soup for the soul)]]></title>
+        <id>https://stupime.github.io/post/quoteschicken-soup-for-the-soul/</id>
+        <link href="https://stupime.github.io/post/quoteschicken-soup-for-the-soul/">
+        </link>
+        <updated>2020-03-19T01:40:01.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Nothing in the world can take the place of persistence.<br>
+Talent will not, nothing is more common than unsuccessful men with talent.<br>
+Genius will not, unrewarded genius is almost a proverb.<br>
+Education will not, the world is full of enducated failures.<br>
+Persistence and determination alone are omnipotent.</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Tentative summer travel plan]]></title>
         <id>https://stupime.github.io/post/tentative-summer-travel-plan/</id>
@@ -535,24 +550,6 @@ could be used to set all elements to 0 or some char eg'.', but cant be used to s
 </li>
 <li>include&lt;ctype.h&gt; could use tolower</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[About stupime]]></title>
-        <id>https://stupime.github.io/post/about/</id>
-        <link href="https://stupime.github.io/post/about/">
-        </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<p>a stupid coder with poor coding skills</p>
-<h2 id="about-site">About site</h2>
-<p>Too bored to code, so borrow some codes from <a href="https://github.com/ITJoker233/Gridea-theme-Chic">Gridea-theme-Chic</a> to build some shit where I could write some bullshit.</p>
-<h2 id="who-am-i">Who am I</h2>
-<p>male, 18 yrs young, ug @ CSE department, CUHK</p>
-<h2 id="interests">Interests</h2>
-<p>photography, marathon, beauty, acg, rock, rap</p>
-<h2 id="contacts">Contacts</h2>
-<p>Tel:+31 645319337 || +65 81736858<br>
-Email:wwei8@cse.cuhk.edu.hk || n1904198h@e.ntu.edu.sg</p>
 ]]></content>
     </entry>
 </feed>
