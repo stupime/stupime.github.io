@@ -2,13 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-19T09:30:31.014Z</updated>
+    <updated>2020-03-20T14:42:07.511Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[Python notes]]></title>
+        <id>https://stupime.github.io/post/python-notes/</id>
+        <link href="https://stupime.github.io/post/python-notes/">
+        </link>
+        <updated>2020-03-20T06:17:20.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time)<br>
+#operator</li>
+<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or</li>
+<li>in &quot;char/substring in string&quot; -&gt;True/False</li>
+</ol>
+<p>#Control Flow<br>
+4. sequencial<br>
+5. conditional statement:</p>
+<ul>
+<li>colan, indent, deindent</li>
+<li>if elif</li>
+<li>try A except B : if A works skip B, if A doesnt work, skip A do B //INSURANCE POLICY, make program not stop with traceback...but continue execution</li>
+</ul>
+<ol start="6">
+<li>iteration
+<ul>
+<li>while ...: -indefinite</li>
+<li>for i <strong>in</strong> collections(eg. list,lines in file,char in string): -definite iterate over members in a set</li>
+</ul>
+</li>
+<li>store and use
+<ul>
+<li>str = input()</li>
+<li>char or int = min(),max()</li>
+<li>int(),float()  //int part of it, no rounding</li>
+<li>def func(alias...) block only remember for later use not execute; not necessarily at the beginning</li>
+</ul>
+</li>
+<li>String
+<ul>
+<li>index [x] from 0, x cant be out of range</li>
+<li>len(str)</li>
+<li>loop through: prefer &quot;for c <strong>in</strong> str:...&quot;</li>
+<li>slicing:str[a:b]: up to but not including; b could out of range; if no a/b,means a = 0,b = <strong>len(str)</strong>(not len-1,so include the ending)</li>
+<li>cancatenation: +</li>
+<li>in</li>
+<li>comparason: ==&gt;&lt;</li>
+<li>str lib(<strong>str itself immutable, these methods return a copy</strong>)
+<ul>
+<li>str.lower()/upper() /capitalize()</li>
+<li>str.find(substr) return first occurence of substr in str,if no -1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Quotes(chicken soup for the soul)]]></title>
         <id>https://stupime.github.io/post/quoteschicken-soup-for-the-soul/</id>
@@ -466,93 +521,6 @@ command &gt; output.txt 2&gt;&amp;1 //means redirect both output and err message
 <li>
 <p>sparking fears the contagion could spread quickly -sparking 导致</p>
 </li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reflection on codeforces round 624 div3]]></title>
-        <id>https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/</id>
-        <link href="https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/">
-        </link>
-        <updated>2020-02-28T09:04:03.000Z</updated>
-        <content type="html"><![CDATA[<p>// The stunning figure in thumbnail is one of author's wives who has nothing to do with Wang Wei.</p>
-<h2 id="mathematical-induction">mathematical induction:</h2>
-<ul>
-<li>think about what iff of the goal is.<br>
-eg. to connect two placse via a road, the iff is that every point of the road functions well.</li>
-<li>select loop range<br>
-eg.use mathematical induction to find possible max range for a iterating var</li>
-</ul>
-<h2 id="consider-problem-in-two-ways">consider problem in two ways:</h2>
-<ul>
-<li>
-<p>operation</p>
-</li>
-<li>
-<p>outcome</p>
-<p>choose the easiest one<br>
-eg.<br>
-to find min nunm of operations to achieve some goal, we could either try diff operations until satisfying the gaol and update min during process<br>
-or directly find the outcome set of goal, and find min within it<br>
-one point to take care is carefully selecting loop range based on the goal and mathematical induction</p>
-</li>
-</ul>
-<h2 id="wrong-answer">Wrong answer</h2>
-<ul>
-<li>check goal</li>
-<li>check output format</li>
-<li>check logic<br>
-#especially the ifs think twice about its condition, sequence and nested structure</li>
-</ul>
-<h2 id="runtime-error">Runtime error</h2>
-<ul>
-<li>divide 0</li>
-<li>arr index out of bound</li>
-<li>no free for malloc</li>
-</ul>
-<h2 id="time-limit-exceed">Time limit exceed:</h2>
-<ul>
-<li>
-<p>lack some possibilities which cause a infinite loop or recusion</p>
-<ul>
-<li>code after list all possibilities and logic</li>
-</ul>
-</li>
-<li>
-<p>use dynamic programming to change the calculating order from repetitive manner to accumulating manner.</p>
-<ul>
-<li>add/multiply repetitive/mathmatically-related part: scan a word with several times stopping at random position in th word, count total read times for each letter in the word</li>
-<li>we could add from left to right, every time reach stopping point, use another for loop to add the times at this stop from beginning to current stop
-<ul>
-<li>O(n^2)</li>
-<li>or scan from right to left add counter(0 at first) for each letter, uppon reaching stop, counter += times of this stop</li>
-<li>O(n)</li>
-</ul>
-</li>
-<li>similarly, calculate sum of bitwidth of 1-n
-<ul>
-<li>calculate n's bidwidth O(lgn) and use math knowledge get sum it's complex and may use power func</li>
-<li>from 1 to n, initialize 1's bitwidth d as 1, every num get its bitwidth from d_i/2 +1as add its bitwidth</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="string-initialization">string initialization</h2>
-<ul>
-<li>char * arr  = malloc(arr,n+1);  #must malloc before scanf or fgets,ow                                                         #seg fault</li>
-<li>char arr[n+1]      #must use n+1 because of the ending char<br>
-#consider arr index out of bound or out of str length, former will seg fault/runtime error, latter will retrieve unknown value</li>
-<li>memset(arr, 0, n*sizeofarr[0])<br>
-could be used to set all elements to 0 or some char eg'.', but cant be used to set all to an int value eg.1</li>
-<li>fgets(arr,n+3,fp/stdin)
-<ul>
-<li>n+3 for the ending \0 and \n</li>
-<li>due to \n strlen for fgetsed arr should minus 1</li>
-<li>read the whole line, not like scanf will end at 1st space or tab</li>
-</ul>
-</li>
-<li>include&lt;ctype.h&gt; could use tolower</li>
 </ul>
 ]]></content>
     </entry>
