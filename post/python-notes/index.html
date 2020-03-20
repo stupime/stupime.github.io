@@ -90,7 +90,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1584714361011" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1584724547571" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -109,7 +109,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1584714361011" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1584724547571" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -188,9 +188,9 @@
                                 Date: <a href="#">2020-03-20</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">1.4
+                                    href="#">3.1
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">229</a></span>
+                                    <span class="post-words">words:<a href="#">494</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -205,20 +205,23 @@
                         <div class="post-content">
                             
                             <ol>
-<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time)<br>
-#operator</li>
-<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or</li>
+<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time)</li>
+</ol>
+<h2 id="operator">operator</h2>
+<ol start="2">
+<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or,not</li>
 <li>in &quot;char/substring in string&quot; -&gt;True/False</li>
 </ol>
-<p>#Control Flow<br>
-4. sequencial<br>
-5. conditional statement:</p>
+<h2 id="control-flow">Control Flow</h2>
+<ol start="4">
+<li>sequencial</li>
+<li>conditional statement:
 <ul>
 <li>colan, indent, deindent</li>
 <li>if elif</li>
-<li>try A except B : if A works skip B, if A doesnt work, skip A do B //INSURANCE POLICY, make program not stop with traceback...but continue execution</li>
+<li>try A except B : if A works skip B, if A doesnt work, skip A do B //INSURANCE POLICY, make program not stop with traceback...but continue execution //if code after B relies on A, add quit() in B</li>
 </ul>
-<ol start="6">
+</li>
 <li>iteration
 <ul>
 <li>while ...: -indefinite</li>
@@ -235,6 +238,7 @@
 </li>
 <li>String
 <ul>
+<li>read input() and convert int()/float()</li>
 <li>index [x] from 0, x cant be out of range</li>
 <li>len(str)</li>
 <li>loop through: prefer &quot;for c <strong>in</strong> str:...&quot;</li>
@@ -242,12 +246,50 @@
 <li>cancatenation: +</li>
 <li>in</li>
 <li>comparason: ==&gt;&lt;</li>
-<li>str lib(<strong>str itself immutable, these methods return a copy</strong>)
+<li>str lib(str itself <strong>immutable</strong>, these methods <strong>return a copy</strong>)
 <ul>
 <li>str.lower()/upper() /capitalize()</li>
-<li>str.find(substr) return first occurence of substr in str,if no -1</li>
+<li>str.find(substr) return first occurence's start index of substr in str,if no -1 <strong>used together with slice</strong></li>
+<li>str.replace(oldsub,newsub) find all occurences of old and replace with the new</li>
+<li>str.lstrip()/rstrip()/strip() remove left/right/both whitespaces(space/tab/newline) in str</li>
+<li>str.startwith(str1) check if str starts with str1 return True/False</li>
 </ul>
 </li>
+</ul>
+</li>
+</ol>
+<h2 id="file-processing">File processing</h2>
+<ol start="9">
+<li>fhand = open(filename,mode) returns a handle, filename should be str(i.e.' ...'),mode(r:read,default;w:write), where a <strong>handle</strong> is like a porthole btw python &amp; file, <strong>not</strong> data in file,but a way to get data, print handle will output filename,mode,etc but not lines in file, it's treated as a <strong>sequence</strong> of lines-<strong>for loop</strong></li>
+<li>file structure: newline:\n single char <strong>print() add newline automatically on purpose</strong></li>
+<li>read file
+<ul>
+<li>line by line: handle = open(filename) for line in handle:... <strong>line contains newline at end</strong></li>
+<li>the whole content(newline included): ... str = handle.read(), if need print, remember to erase right newline by str= str.rstrip(),or else double blank lines will appear due to print</li>
+</ul>
+</li>
+</ol>
+<h2 id="data-structurevariable-designcollectionhow-putget-back-out">Data Structure(variable design,collection,how put/get back out)</h2>
+<ol start="12">
+<li>list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]
+<ol>
+<li>internal structure</li>
+</ol>
+<ul>
+<li>initialize</li>
+<li>print([.....]) output the same [.....]</li>
+<li>put out index list[i],i from 0</li>
+<li><strong>mutable</strong> change by assigning element by index list[i]=...</li>
+<li>len() #(elements)</li>
+<li>range(i) returns a list from 0 up to(but not including) i</li>
+<li>range(len(str)) for counted for loop</li>
+</ul>
+<ol start="2">
+<li>operations</li>
+</ol>
+<ul>
+<li>cantanation + lista+listb-&gt;[listaelements...listbelements...]</li>
+<li>slice as str</li>
 </ul>
 </li>
 </ol>
@@ -257,7 +299,17 @@
                         </div>
                         
                             <div class="post-toc">
-                                
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#operator">operator</a></li>
+<li><a href="#control-flow">Control Flow</a></li>
+<li><a href="#file-processing">File processing</a></li>
+<li><a href="#data-structurevariable-designcollectionhow-putget-back-out">Data Structure(variable design,collection,how put/get back out)</a></li>
+</ul>
+</li>
+</ul>
+
                             </div>
                             
                                 
@@ -287,8 +339,8 @@
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/python-notes/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/python-notes/&sharesource=qzone&title=Python notes&pics=https://stupime.github.io/images/avatar.png?v=1584714361011&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/python-notes/&sharesource=weibo&title=Python notes + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584714361011 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/python-notes/&sharesource=qzone&title=Python notes&pics=https://stupime.github.io/images/avatar.png?v=1584724547571&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/python-notes/&sharesource=weibo&title=Python notes + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584724547571 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -399,7 +451,7 @@
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1584714361011);
+                    newDate.setTime(1584724547571);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-20T14:42:07.511Z</updated>
+    <updated>2020-03-20T17:15:50.970Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -16,20 +16,23 @@
         </link>
         <updated>2020-03-20T06:17:20.000Z</updated>
         <content type="html"><![CDATA[<ol>
-<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time)<br>
-#operator</li>
-<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or</li>
+<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time)</li>
+</ol>
+<h2 id="operator">operator</h2>
+<ol start="2">
+<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or,not</li>
 <li>in &quot;char/substring in string&quot; -&gt;True/False</li>
 </ol>
-<p>#Control Flow<br>
-4. sequencial<br>
-5. conditional statement:</p>
+<h2 id="control-flow">Control Flow</h2>
+<ol start="4">
+<li>sequencial</li>
+<li>conditional statement:
 <ul>
 <li>colan, indent, deindent</li>
 <li>if elif</li>
-<li>try A except B : if A works skip B, if A doesnt work, skip A do B //INSURANCE POLICY, make program not stop with traceback...but continue execution</li>
+<li>try A except B : if A works skip B, if A doesnt work, skip A do B //INSURANCE POLICY, make program not stop with traceback...but continue execution //if code after B relies on A, add quit() in B</li>
 </ul>
-<ol start="6">
+</li>
 <li>iteration
 <ul>
 <li>while ...: -indefinite</li>
@@ -46,6 +49,7 @@
 </li>
 <li>String
 <ul>
+<li>read input() and convert int()/float()</li>
 <li>index [x] from 0, x cant be out of range</li>
 <li>len(str)</li>
 <li>loop through: prefer &quot;for c <strong>in</strong> str:...&quot;</li>
@@ -53,12 +57,50 @@
 <li>cancatenation: +</li>
 <li>in</li>
 <li>comparason: ==&gt;&lt;</li>
-<li>str lib(<strong>str itself immutable, these methods return a copy</strong>)
+<li>str lib(str itself <strong>immutable</strong>, these methods <strong>return a copy</strong>)
 <ul>
 <li>str.lower()/upper() /capitalize()</li>
-<li>str.find(substr) return first occurence of substr in str,if no -1</li>
+<li>str.find(substr) return first occurence's start index of substr in str,if no -1 <strong>used together with slice</strong></li>
+<li>str.replace(oldsub,newsub) find all occurences of old and replace with the new</li>
+<li>str.lstrip()/rstrip()/strip() remove left/right/both whitespaces(space/tab/newline) in str</li>
+<li>str.startwith(str1) check if str starts with str1 return True/False</li>
 </ul>
 </li>
+</ul>
+</li>
+</ol>
+<h2 id="file-processing">File processing</h2>
+<ol start="9">
+<li>fhand = open(filename,mode) returns a handle, filename should be str(i.e.' ...'),mode(r:read,default;w:write), where a <strong>handle</strong> is like a porthole btw python &amp; file, <strong>not</strong> data in file,but a way to get data, print handle will output filename,mode,etc but not lines in file, it's treated as a <strong>sequence</strong> of lines-<strong>for loop</strong></li>
+<li>file structure: newline:\n single char <strong>print() add newline automatically on purpose</strong></li>
+<li>read file
+<ul>
+<li>line by line: handle = open(filename) for line in handle:... <strong>line contains newline at end</strong></li>
+<li>the whole content(newline included): ... str = handle.read(), if need print, remember to erase right newline by str= str.rstrip(),or else double blank lines will appear due to print</li>
+</ul>
+</li>
+</ol>
+<h2 id="data-structurevariable-designcollectionhow-putget-back-out">Data Structure(variable design,collection,how put/get back out)</h2>
+<ol start="12">
+<li>list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]
+<ol>
+<li>internal structure</li>
+</ol>
+<ul>
+<li>initialize</li>
+<li>print([.....]) output the same [.....]</li>
+<li>put out index list[i],i from 0</li>
+<li><strong>mutable</strong> change by assigning element by index list[i]=...</li>
+<li>len() #(elements)</li>
+<li>range(i) returns a list from 0 up to(but not including) i</li>
+<li>range(len(str)) for counted for loop</li>
+</ul>
+<ol start="2">
+<li>operations</li>
+</ol>
+<ul>
+<li>cantanation + lista+listb-&gt;[listaelements...listbelements...]</li>
+<li>slice as str</li>
 </ul>
 </li>
 </ol>
