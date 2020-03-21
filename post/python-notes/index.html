@@ -90,7 +90,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1584724547571" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1584801264514" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -109,7 +109,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1584724547571" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1584801264514" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -188,9 +188,9 @@
                                 Date: <a href="#">2020-03-20</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">3.1
+                                    href="#">7.4
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">494</a></span>
+                                    <span class="post-words">words:<a href="#">1189</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -205,11 +205,11 @@
                         <div class="post-content">
                             
                             <ol>
-<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time)</li>
+<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time for find min/max)</li>
 </ol>
 <h2 id="operator">operator</h2>
 <ol start="2">
-<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or,not</li>
+<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or(<strong>check first if pass skip second expression</strong>),not</li>
 <li>in &quot;char/substring in string&quot; -&gt;True/False</li>
 </ol>
 <h2 id="control-flow">Control Flow</h2>
@@ -236,6 +236,9 @@
 <li>def func(alias...) block only remember for later use not execute; not necessarily at the beginning</li>
 </ul>
 </li>
+</ol>
+<h2 id="string">string</h2>
+<ol start="8">
 <li>String
 <ul>
 <li>read input() and convert int()/float()</li>
@@ -249,10 +252,10 @@
 <li>str lib(str itself <strong>immutable</strong>, these methods <strong>return a copy</strong>)
 <ul>
 <li>str.lower()/upper() /capitalize()</li>
-<li>str.find(substr) return first occurence's start index of substr in str,if no -1 <strong>used together with slice</strong></li>
+<li>str.find(substr) return first occurence's start index of substr in str,if no -1 <strong>used together with slice</strong> optional, 2nd para is for starting position</li>
 <li>str.replace(oldsub,newsub) find all occurences of old and replace with the new</li>
 <li>str.lstrip()/rstrip()/strip() remove left/right/both whitespaces(space/tab/newline) in str</li>
-<li>str.startwith(str1) check if str starts with str1 return True/False</li>
+<li>str.start<strong>s</strong>with(str1) check if str starts with str1 return True/False</li>
 </ul>
 </li>
 </ul>
@@ -269,14 +272,15 @@
 </ul>
 </li>
 </ol>
-<h2 id="data-structurevariable-designcollectionhow-putget-back-out">Data Structure(variable design,collection,how put/get back out)</h2>
+<h2 id="data-structurevariable-designcollectionhow-put-inget-back-out">Data Structure(variable design,collection,how put in/get back out)</h2>
 <ol start="12">
-<li>list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]
+<li>
+<p>list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]</p>
 <ol>
 <li>internal structure</li>
 </ol>
 <ul>
-<li>initialize</li>
+<li>initialize an empty list: list = list(); constants: lidt = [a,b,c...]</li>
 <li>print([.....]) output the same [.....]</li>
 <li>put out index list[i],i from 0</li>
 <li><strong>mutable</strong> change by assigning element by index list[i]=...</li>
@@ -290,8 +294,126 @@
 <ul>
 <li>cantanation + lista+listb-&gt;[listaelements...listbelements...]</li>
 <li>slice as str</li>
+<li>list.append() add element to the tail</li>
+<li>del list[i] remove i-th element</li>
+<li><strong>in</strong> as str</li>
+<li>list.sort() <strong>since list is mutable, sort method changes itself nstead of returning a copy--&gt;indeed <em>NO</em> return value</strong> could set (reverse = True) to sort from high to low <strong>sort letters in str:</strong> ' '.join(sorted(str))</li>
+<li>min(l),max(l),sum(l)</li>
+</ul>
+<ol start="3">
+<li>interact with str</li>
+</ol>
+<ul>
+<li>str.split() return a list whose elements are substrings of str. splited by space <strong>conbine with for loop with line into pieces</strong></li>
 </ul>
 </li>
+<li>
+<p>dictionary(2nd collection, key-value,{key:value,key1:value1...})</p>
+<ol>
+<li>internal structure
+<ul>
+<li>initialize empty:d = dict()/d={}; costants:d = {k:v,k:1v1...}; key,value not necessarily string-int</li>
+<li>append/insert: d[key] = value, mutable overwrite before value</li>
+<li>lookup-tag(index by key) d[key]</li>
+<li>unordered</li>
+<li>in , not in</li>
+</ul>
+</li>
+<li>applications:
+<ul>
+<li>each word count  by dict.<strong>get</strong>*(key,default_al)<br>
+branch for in and not in keys<br>
+or <strong>dict.get(key,default_val)</strong>   # same effect as above: if not in set as default; if in do...</li>
+<li>convet dict to list
+<ul>
+<li>list(dict)-&gt;list of keys</li>
+<li>dict.keys()/values() -&gt; list of keys/values</li>
+<li>dict.items() -&gt; list of (key,value) pairs(tuples) e.g. [(k,v),(k1.v1)]</li>
+</ul>
+</li>
+<li>loop through(default loop on keys of dict)
+<ul>
+<li>for key in dict: ...</li>
+<li>for key,value in dict.items()  go through all key-value pairs, key pair change simultaneously(where dict.items() returns a list of two-tuples)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>tuple(more efficient version of list which is unmodifiable,temporary use)</p>
+<ol>
+<li>internal structure
+<ul>
+<li>initialize t = (...,...,...), empty tuple t =()/tuple()</li>
+<li>immutable cant sort/append/reverse</li>
+<li>index t[i]</li>
+</ul>
+</li>
+<li>operations:
+<ul>
+<li>max(t) -&gt;max of its elements</li>
+<li>t.count(v) -&gt; return num of v occurences</li>
+<li>t,index(v) -&gt; return index of 1st occurence of v, <strong>if no raise exception</strong></li>
+<li>assignment (x,y) = (v1,v2) -&gt;x =v1,y=v2 simultaneously</li>
+<li>comparison: left to right (view lfh as most-significance )</li>
+<li>sort list of tuples: by sorted(list)
+<ul>
+<li>sort dict from key: 1. get list = dict.items(),2. sorted(list)</li>
+<li>sort dict by value: 1.reverse k-v by using a temporary list l=list() for k,v in d.items(): l.append( (v,k) ) 2. sorted(l,reverse = true) sort from v to key, <strong>reverse means from high to low</strong>
+<ul>
+<li>application: top k key-value pairs</li>
+<li>improvement: sl= sorted([(v,k) for k,v in dict.iterms()]) by using a dynamic list(which means for all(v,k) s.t. for k,v in d.items()) then for v,k in sl: print(k,v)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="regexfor-data-validation-sear-extract">regex(for data validation sear extract)</h2>
+<ol start="15">
+<li>to use,import re</li>
+<li>re.search('regex',str) return True/False whether match</li>
+<li>re.findall('regex',str) return a list (empty list possible) containing all substrs complying regex in str(extract data,pulling out)</li>
+<li>cheat sheet
+<ul>
+<li>\s :any whtespace char</li>
+<li>\S any non-whitespace char</li>
+<li>* and + by default match greedily(as long as possible), by adding ? behind to avoid the greed *? and +?(prefer shortest matching)</li>
+<li>parenthesis() in regex is for stating extracting start and end position i.e. which part to extract e.g. 's([0-9]+)@.+' extract sid from culink email</li>
+<li>[^ ] any single char but not space caret^ means not</li>
+</ul>
+</li>
+</ol>
+<h2 id="access-web-data">Access web data</h2>
+<ol>
+<li>Socket
+<ul>
+<li>socket is an endpoint of bidirectional inter-process communication flow</li>
+<li>http request process<br>
+import socket<br>
+mysock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)  #create object<br>
+mysock.connect(hostnamestr, portnum) #connect socket<br>
+mysock.send(encodedstr) #send http request command which needs encode(WHY? our code in python is unicode we need to change it to UTF-8 bytes as command)<br>
+while True:<br>
+data = mysock.recv(512)<br>
+if len(data) &lt; 1<br>
+break<br>
+print(data.decode())                #receive data from server and set receive limit 512,if eof break,decode<br>
+mysock.close()</li>
+</ul>
+</li>
+</ol>
+<h2 id="tips">tips</h2>
+<ol>
+<li>guardian in string/list:<br>
+if len(str)&lt;1: continue<br>
+if len(l)❤️ or l[2]!='a': ... list.append(l[2])  // put len chekc first to avoid index out of bound</li>
+<li>index not allowed for nonexist element for str,list, dict; use in instead</li>
 </ol>
 
                             
@@ -304,8 +426,12 @@
 <ul>
 <li><a href="#operator">operator</a></li>
 <li><a href="#control-flow">Control Flow</a></li>
+<li><a href="#string">string</a></li>
 <li><a href="#file-processing">File processing</a></li>
-<li><a href="#data-structurevariable-designcollectionhow-putget-back-out">Data Structure(variable design,collection,how put/get back out)</a></li>
+<li><a href="#data-structurevariable-designcollectionhow-put-inget-back-out">Data Structure(variable design,collection,how put in/get back out)</a></li>
+<li><a href="#regexfor-data-validation-sear-extract">regex(for data validation sear extract)</a></li>
+<li><a href="#access-web-data">Access web data</a></li>
+<li><a href="#tips">tips</a></li>
 </ul>
 </li>
 </ul>
@@ -339,8 +465,8 @@
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/python-notes/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/python-notes/&sharesource=qzone&title=Python notes&pics=https://stupime.github.io/images/avatar.png?v=1584724547571&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/python-notes/&sharesource=weibo&title=Python notes + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584724547571 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/python-notes/&sharesource=qzone&title=Python notes&pics=https://stupime.github.io/images/avatar.png?v=1584801264514&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/python-notes/&sharesource=weibo&title=Python notes + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584801264514 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -369,7 +495,7 @@
                                                                                     
                                                                                             
                                                                                                 <a class="next" rel="next" href="https://stupime.github.io/post/quoteschicken-soup-for-the-soul/">
-                                                                                                    Quotes(chicken soup for the soul)
+                                                                                                    Chicken Soup for My Soul
                                                                                                 </a>
                                                                                                 
                                                                                 </section>
@@ -451,7 +577,7 @@
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1584724547571);
+                    newDate.setTime(1584801264514);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
