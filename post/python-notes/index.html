@@ -90,7 +90,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1584872932238" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1584873459678" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -109,7 +109,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1584872932238" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1584873459678" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -188,9 +188,9 @@
                                 Date: <a href="#">2020-03-20</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">9.4
+                                    href="#">9.5
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">1512</a></span>
+                                    <span class="post-words">words:<a href="#">1518</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -272,41 +272,28 @@
 </ul>
 </li>
 </ol>
-<h2 id="data-structurevariable-designcollectionhow-put-inget-back-out">Data Structure(variable design,collection,how put in/get back out)</h2>
-<ol start="12">
-<li>
-<p>list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]</p>
-<ol>
-<li>internal structure</li>
-</ol>
-<ul>
-<li>initialize an empty list: list = list(); constants: lidt = [a,b,c...]</li>
-<li>print([.....]) output the same [.....]</li>
-<li>put out index list[i],i from 0</li>
-<li><strong>mutable</strong> change by assigning element by index list[i]=...</li>
-<li>len() #(elements)</li>
-<li>range(i) returns a list from 0 up to(but not including) i</li>
-<li>range(len(str)) for counted for loop</li>
-</ul>
-<ol start="2">
-<li>operations</li>
-</ol>
-<ul>
-<li>cantanation + lista+listb-&gt;[listaelements...listbelements...]</li>
-<li>slice as str</li>
-<li>list.append() add element to the tail</li>
-<li>del list[i] remove i-th element</li>
-<li><strong>in</strong> as str</li>
-<li>list.sort() <strong>since list is mutable, sort method changes itself nstead of returning a copy--&gt;indeed <em>NO</em> return value</strong> could set (reverse = True) to sort from high to low <strong>sort letters in str:</strong> ' '.join(sorted(str))</li>
-<li>min(l),max(l),sum(l)</li>
-</ul>
-<ol start="3">
-<li>interact with str</li>
-</ol>
-<ul>
-<li>str.split() return a list whose elements are substrings of str. splited by space <strong>conbine with for loop with line into pieces</strong></li>
-</ul>
-</li>
+<h2 id="data-structure">Data Structure</h2>
+<p>(<em>variable design,collection,how put in/get back out</em>)<br>
+12. list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]<br>
+1. internal structure<br>
+* initialize an empty list: list = list(); constants: lidt = [a,b,c...]<br>
+* print([.....]) output the same [.....]<br>
+* put out index list[i],i from 0<br>
+* <strong>mutable</strong> change by assigning element by index list[i]=...<br>
+* len() #(elements)<br>
+* range(i) returns a list from 0 up to(but not including) i<br>
+* range(len(str)) for counted for loop<br>
+2. operations<br>
+* cantanation + lista+listb-&gt;[listaelements...listbelements...]<br>
+* slice as str<br>
+* list.append() add element to the tail<br>
+* del list[i] remove i-th element<br>
+* <strong>in</strong> as str<br>
+* list.sort() <strong>since list is mutable, sort method changes itself nstead of returning a copy--&gt;indeed <em>NO</em> return value</strong> could set (reverse = True) to sort from high to low <strong>sort letters in str:</strong> ' '.join(sorted(str))<br>
+* min(l),max(l),sum(l)<br>
+3. interact with str<br>
+* str.split() return a list whose elements are substrings of str. splited by space <strong>conbine with for loop with line into pieces</strong></p>
+<ol start="13">
 <li>
 <p>dictionary(2nd collection, key-value,{key:value,key1:value1...})</p>
 <ol>
@@ -374,22 +361,19 @@ or <strong>dict.get(key,default_val)</strong>   # same effect as above: if not i
 </ol>
 </li>
 </ol>
-<h2 id="regexfor-data-validation-search-extract">regex(for data validation search extract)</h2>
-<ol start="15">
-<li>to use,import re</li>
-<li>re.search('regex',str) return True/False whether match</li>
-<li>re.findall('regex',str) return a list (empty list possible) containing all substrs complying regex in str(extract data,pulling out)</li>
-<li>cheat sheet
-<ul>
-<li>\s :any whtespace char</li>
-<li>\S any non-whitespace char</li>
-<li>* and + by default match greedily(as long as possible), by adding ? behind to avoid the greed *? and +?(prefer shortest matching)</li>
-<li>parenthesis() in regex is for stating extracting start and end position i.e. which part to extract e.g. 's([0-9]+)@.+' extract sid from culink email</li>
-<li>[^ ] any single char but not space caret^ means not</li>
-</ul>
-</li>
-</ol>
-<h2 id="access-web-data-tcpip-allow-pipesocket-btw-applications-we-designed-http-which-defines-when-what-how-order-many-things-in-interchange-request-sentdata-receivedparse-datasimply-by-urllib-html-nasty-to-handlesimply-use-beautifulsoup">Access web data TCP/IP allow pipe/socket btw applications-we designed http which defines when what how order... many things in interchange - request sent,data received,parse data(simply by urllib)-html nasty to handle(simply use beautifulsoup)</h2>
+<h2 id="regex">regex</h2>
+<p>(<em>for data validation search extract</em>)<br>
+15. to use,import re<br>
+16. re.search('regex',str) return True/False whether match<br>
+17. re.findall('regex',str) return a list (empty list possible) containing all substrs complying regex in str(extract data,pulling out)<br>
+18. cheat sheet<br>
+* \s :any whtespace char<br>
+* \S any non-whitespace char<br>
+* * and + by default match greedily(as long as possible), by adding ? behind to avoid the greed *? and +?(prefer shortest matching)<br>
+* parenthesis() in regex is for stating extracting start and end position i.e. which part to extract e.g. 's([0-9]+)@.+' extract sid from culink email<br>
+* [^ ] any single char but not space caret^ means not</p>
+<h2 id="access-web-data-tcpip">Access web data TCP/IP</h2>
+<p><em>(allow pipe/socket btw applications-we designed http which defines when what how order... many things in interchange - request sent,data received,parse data(simply by urllib)-html nasty to handle(simply use beautifulsoup))</em></p>
 <ol>
 <li>Socket
 <ul>
@@ -456,7 +440,8 @@ ctx.verify_mode = ssl.CERT_NONE
 </ul>
 </li>
 </ol>
-<h2 id="data-intetrchange-formats-btw-two-independent-applicationsxml-json">data intetrchange formats btw two independent applications(XML, JSON)</h2>
+<h2 id="data-intetrchange-btw-applications">data intetrchange btw applications</h2>
+<p>(<em>fromat:XML, JSON</em>)</p>
 <h2 id="tips">tips</h2>
 <ol>
 <li>guardian in string/list:</li>
@@ -481,10 +466,10 @@ ctx.verify_mode = ssl.CERT_NONE
 <li><a href="#control-flow">Control Flow</a></li>
 <li><a href="#string">string</a></li>
 <li><a href="#file-processing">File processing</a></li>
-<li><a href="#data-structurevariable-designcollectionhow-put-inget-back-out">Data Structure(variable design,collection,how put in/get back out)</a></li>
-<li><a href="#regexfor-data-validation-search-extract">regex(for data validation search extract)</a></li>
-<li><a href="#access-web-data-tcpip-allow-pipesocket-btw-applications-we-designed-http-which-defines-when-what-how-order-many-things-in-interchange-request-sentdata-receivedparse-datasimply-by-urllib-html-nasty-to-handlesimply-use-beautifulsoup">Access web data TCP/IP allow pipe/socket btw applications-we designed http which defines when what how order... many things in interchange - request sent,data received,parse data(simply by urllib)-html nasty to handle(simply use beautifulsoup)</a></li>
-<li><a href="#data-intetrchange-formats-btw-two-independent-applicationsxml-json">data intetrchange formats btw two independent applications(XML, JSON)</a></li>
+<li><a href="#data-structure">Data Structure</a></li>
+<li><a href="#regex">regex</a></li>
+<li><a href="#access-web-data-tcpip">Access web data TCP/IP</a></li>
+<li><a href="#data-intetrchange-btw-applications">data intetrchange btw applications</a></li>
 <li><a href="#tips">tips</a></li>
 </ul>
 </li>
@@ -519,8 +504,8 @@ ctx.verify_mode = ssl.CERT_NONE
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stupime.github.io/post/python-notes/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/python-notes/&sharesource=qzone&title=Python notes&pics=https://stupime.github.io/images/avatar.png?v=1584872932238&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/python-notes/&sharesource=weibo&title=Python notes + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584872932238 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stupime.github.io/post/python-notes/&sharesource=qzone&title=Python notes&pics=https://stupime.github.io/images/avatar.png?v=1584873459678&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://stupime.github.io/post/python-notes/&sharesource=weibo&title=Python notes + " - " + &pic="https://stupime.github.io/images/avatar.png?v=1584873459678 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -631,7 +616,7 @@ ctx.verify_mode = ssl.CERT_NONE
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1584872932238);
+                    newDate.setTime(1584873459678);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
