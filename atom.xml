@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-21T14:34:27.200Z</updated>
+    <updated>2020-03-22T10:29:27.545Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -185,7 +185,7 @@ or <strong>dict.get(key,default_val)</strong>   # same effect as above: if not i
 </ol>
 </li>
 </ol>
-<h2 id="regexfor-data-validation-sear-extract">regex(for data validation sear extract)</h2>
+<h2 id="regexfor-data-validation-search-extract">regex(for data validation search extract)</h2>
 <ol start="15">
 <li>to use,import re</li>
 <li>re.search('regex',str) return True/False whether match</li>
@@ -200,30 +200,83 @@ or <strong>dict.get(key,default_val)</strong>   # same effect as above: if not i
 </ul>
 </li>
 </ol>
-<h2 id="access-web-data">Access web data</h2>
+<h2 id="access-web-data-tcpip-allow-pipesocket-btw-applications-we-designed-http-which-defines-when-what-how-order-many-things-in-interchange-request-sentdata-receivedparse-datasimply-by-urllib-html-nasty-to-handlesimply-use-beautifulsoup">Access web data TCP/IP allow pipe/socket btw applications-we designed http which defines when what how order... many things in interchange - request sent,data received,parse data(simply by urllib)-html nasty to handle(simply use beautifulsoup)</h2>
 <ol>
 <li>Socket
 <ul>
 <li>socket is an endpoint of bidirectional inter-process communication flow</li>
-<li>http request process<br>
-import socket<br>
-mysock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)  #create object<br>
-mysock.connect(hostnamestr, portnum) #connect socket<br>
-mysock.send(encodedstr) #send http request command which needs encode(WHY? our code in python is unicode we need to change it to UTF-8 bytes as command)<br>
-while True:<br>
-data = mysock.recv(512)<br>
-if len(data) &lt; 1<br>
-break<br>
-print(data.decode())                #receive data from server and set receive limit 512,if eof break,decode<br>
-mysock.close()</li>
+<li>http request process</li>
 </ul>
 </li>
 </ol>
+<pre><code class="language-python">        import socket
+        mysock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)  #create object
+        mysock.connect(hostnamestr, portnum) #connect socket
+        mysock.send(encodedstr) 
+#send http request command which needs encode
+#(WHY? code in python is unicode we need to change it to UTF-8 bytes as command)
+        while True:
+            data = mysock.recv(512)
+            if len(data) &lt; 1
+                break
+        print(data.decode()) #receive data from server and set receive limit 512,
+        #if eof break,decode by default utf-8
+    mysock.close()
+</code></pre>
+<p>improved version(process as <em>''internet file''</em>):</p>
+<pre><code class="language-python">import urllib.request, urllib.parse, urllib.error
+filehandle = urllib.request.urlopen('url')
+#return bytes of before outcome
+#but keeps header, only return data
+#two ways 1. line by line
+for line in filehandle:
+    print(line.decode().strip())#decode from bytes to unicode
+#2.read all
+str = filehandle.read()
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(str,'html.parser')
+#then use beautifulsoup process html and retrive data(e.g. links)
+#retrive all achor tags
+tags = soup('a')  **return a list of bs4 objects**
+for tag in tags:
+    print(tag.get('href',None))    **builtin method of bs4 class**
+</code></pre>
+<p>for http<strong>s</strong> add</p>
+<pre><code>import ssl
+#no need to figure out, just for ignoring ssl certificate error
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+...urllib.......urlopen('url',**context = ctx**).read()
+</code></pre>
+<ol start="2">
+<li>unicode chars:
+<ul>
+<li>to enable all chars from all over the world could be used-&gt;<strong>unicode</strong> which is a <strong>char set</strong> with order</li>
+<li>with unicode, encoding char with fixed length may either too long(utf-32)/not enough-&gt; utf-8 which enables char length be a varible accordingly <strong>utf-8 is a encoding method change unicode to bytes</strong> <em>decode change bytes to unicode</em></li>
+<li>in py3 all strings are unicode, out of our computer e.g. network/database they're bytes in utf-8</li>
+</ul>
+</li>
+<li>urllib handles all above socket,connect,send,recv stuff</li>
+<li>bs4 handles all decode  html-parse stuff
+<ul>
+<li>soup = BeautifulSoup(str,'html.parser')</li>
+<li>methods:</li>
+<li>soup('a') returns a list of tag objects(kind of similar to dict), then could for loop and tag.get('href',None) to fetch urls in html</li>
+<li>tag.contents returns a list of contents</li>
+</ul>
+</li>
+</ol>
+<h2 id="data-intetrchange-formats-btw-two-independent-applicationsxml-json">data intetrchange formats btw two independent applications(XML, JSON)</h2>
 <h2 id="tips">tips</h2>
 <ol>
-<li>guardian in string/list:<br>
-if len(str)&lt;1: continue<br>
-if len(l)❤️ or l[2]!='a': ... list.append(l[2])  // put len chekc first to avoid index out of bound</li>
+<li>guardian in string/list:</li>
+</ol>
+<pre><code class="language-python">    if len(str)&lt;1: continue
+    if len(l)&lt;3 or l[2]!='a': ... list.append(l[2])  
+    # put len chekc first to avoid index out of bound
+</code></pre>
+<ol start="2">
 <li>index not allowed for nonexist element for str,list, dict; use in instead</li>
 </ol>
 ]]></content>
