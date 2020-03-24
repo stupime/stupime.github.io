@@ -2,13 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-23T15:25:55.042Z</updated>
+    <updated>2020-03-24T04:37:33.320Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[insomnia raving]]></title>
+        <id>https://stupime.github.io/post/insomnia-raving/</id>
+        <link href="https://stupime.github.io/post/insomnia-raving/">
+        </link>
+        <updated>2020-03-24T04:08:42.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>Life is like a dream, so u're always asleep not to mention insomnia.</li>
+<li>When u think u cant fall asleep, indeed u're in such a deep sleep mode that u mistake u're awake.</li>
+<li>What prevent u from having a good sleep, are not solely the noisy surroundings, but the cliche that u must sleep for at least 7 hrs every day without any break to obtain a high sleep quality.</li>
+<li>Do what u need to do, but dont be anxious about it.</li>
+<li>The so-called insomia is never that u feel like u didnt fall asleep yesterday, but the situation that u feel powerless tmr due to lack of sleep.</li>
+<li>be obtuse, be slow</li>
+<li>The reasons for insomnia lie in that u failed to concentrate on the sleep, which doesnt mean u should keep urself highly nervous and struggle to fall sleep but think nothing but it's time to sleep. In short, dont distract urself from falling asleep. One thing at one time. One common distraction is the electronics. However, the problem is not electronics themselves, instead caused by the notifications and curiousity about news, friends' moments, etc.</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Plan]]></title>
         <id>https://stupime.github.io/post/plan/</id>
@@ -646,93 +663,6 @@ command &gt; output.txt 2&gt;&amp;1 //means redirect both output and err message
 <li>
 <p>sparking fears the contagion could spread quickly -sparking 导致</p>
 </li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reflection on codeforces round 624 div3]]></title>
-        <id>https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/</id>
-        <link href="https://stupime.github.io/post/reflection-on-codeforces-round-624-div3/">
-        </link>
-        <updated>2020-02-28T09:04:03.000Z</updated>
-        <content type="html"><![CDATA[<p>// The stunning figure in thumbnail is one of author's wives who has nothing to do with Wang Wei.</p>
-<h2 id="mathematical-induction">mathematical induction:</h2>
-<ul>
-<li>think about what iff of the goal is.<br>
-eg. to connect two placse via a road, the iff is that every point of the road functions well.</li>
-<li>select loop range<br>
-eg.use mathematical induction to find possible max range for a iterating var</li>
-</ul>
-<h2 id="consider-problem-in-two-ways">consider problem in two ways:</h2>
-<ul>
-<li>
-<p>operation</p>
-</li>
-<li>
-<p>outcome</p>
-<p>choose the easiest one<br>
-eg.<br>
-to find min nunm of operations to achieve some goal, we could either try diff operations until satisfying the gaol and update min during process<br>
-or directly find the outcome set of goal, and find min within it<br>
-one point to take care is carefully selecting loop range based on the goal and mathematical induction</p>
-</li>
-</ul>
-<h2 id="wrong-answer">Wrong answer</h2>
-<ul>
-<li>check goal</li>
-<li>check output format</li>
-<li>check logic<br>
-#especially the ifs think twice about its condition, sequence and nested structure</li>
-</ul>
-<h2 id="runtime-error">Runtime error</h2>
-<ul>
-<li>divide 0</li>
-<li>arr index out of bound</li>
-<li>no free for malloc</li>
-</ul>
-<h2 id="time-limit-exceed">Time limit exceed:</h2>
-<ul>
-<li>
-<p>lack some possibilities which cause a infinite loop or recusion</p>
-<ul>
-<li>code after list all possibilities and logic</li>
-</ul>
-</li>
-<li>
-<p>use dynamic programming to change the calculating order from repetitive manner to accumulating manner.</p>
-<ul>
-<li>add/multiply repetitive/mathmatically-related part: scan a word with several times stopping at random position in th word, count total read times for each letter in the word</li>
-<li>we could add from left to right, every time reach stopping point, use another for loop to add the times at this stop from beginning to current stop
-<ul>
-<li>O(n^2)</li>
-<li>or scan from right to left add counter(0 at first) for each letter, uppon reaching stop, counter += times of this stop</li>
-<li>O(n)</li>
-</ul>
-</li>
-<li>similarly, calculate sum of bitwidth of 1-n
-<ul>
-<li>calculate n's bidwidth O(lgn) and use math knowledge get sum it's complex and may use power func</li>
-<li>from 1 to n, initialize 1's bitwidth d as 1, every num get its bitwidth from d_i/2 +1as add its bitwidth</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="string-initialization">string initialization</h2>
-<ul>
-<li>char * arr  = malloc(arr,n+1);  #must malloc before scanf or fgets,ow                                                         #seg fault</li>
-<li>char arr[n+1]      #must use n+1 because of the ending char<br>
-#consider arr index out of bound or out of str length, former will seg fault/runtime error, latter will retrieve unknown value</li>
-<li>memset(arr, 0, n*sizeofarr[0])<br>
-could be used to set all elements to 0 or some char eg'.', but cant be used to set all to an int value eg.1</li>
-<li>fgets(arr,n+3,fp/stdin)
-<ul>
-<li>n+3 for the ending \0 and \n</li>
-<li>due to \n strlen for fgetsed arr should minus 1</li>
-<li>read the whole line, not like scanf will end at 1st space or tab</li>
-</ul>
-</li>
-<li>include&lt;ctype.h&gt; could use tolower</li>
 </ul>
 ]]></content>
     </entry>
