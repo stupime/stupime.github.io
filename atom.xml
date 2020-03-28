@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-27T17:41:14.160Z</updated>
+    <updated>2020-03-28T09:41:38.679Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -44,7 +44,8 @@
         <link href="https://stupime.github.io/post/interview-preparation/">
         </link>
         <updated>2020-03-26T09:46:29.000Z</updated>
-        <content type="html"><![CDATA[<ol>
+        <content type="html"><![CDATA[<h2 id="pass">pass!</h2>
+<ol>
 <li><strong>reasons</strong> for selecting me/this project:<br>
 I'm interested in the intersection of computer vison and healthcare. Specifically, I want to use image analysis for disease analysis and video analysis for patient movement supervision to help take off some burdens from physicians/nurses. (Compared to classic cv problems, I think this research direction has more direct benefits in real life.)</li>
 <li>what expect to learn, most appealing aspect in this project<br>
@@ -53,7 +54,7 @@ finish the project requirements and produce some valuable results, find the impo
 in short term, i hope to produce some results in this summer.If possible, I wish I could continue my research in your lab and try to publish one valuable paper in my final year. in the long run, i want to pursue a phd degree and become a researcher.</li>
 <li>what you have learnt in the past: research experience, technical skills(ML, Data Structure)<br>
 konwledge: basic ai fundamental course, ml course, currently taking rl course, basic math,<br>
-have to admit im just a beginner level, but i'd like to learn and will make up what i need to know before the start of our research<br>
+have to admit im just a beginner level, but i'd like to learn and i have the determination and  persistence to make up what i lacked before the start of our research<br>
 i totally have two <strong>research experiences</strong>:<br>
 the first one is in my first year's summer. The topic is encode method to make message correctly transfered in noisy channel. My main work is to use matlab to test performance of the methods and visualize them.<br>
 My second experience is about layout decomposition probelm in circuit design. The problem could be mapped to a complex version of coloring problem. In theoretical level, I together with a postgraduate student revisited one famous paper in that filed, we modified the cost function and fixed some fault in the algorithm. in programming, we added some new features to a existing framework. And we're cunrrently preparing for submission to a conference.</li>
