@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-31T08:56:20.397Z</updated>
+    <updated>2020-03-31T14:55:08.942Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -23,7 +23,8 @@
 <h2 id="tools-templates-02">tools / templates: 0/2</h2>
 <ol>
 <li><a href="https://mlmed.org/tools/xray/">X-ray disease detection</a>  <a href="https://arxiv.org/pdf/1901.11210.pdf">its technical report</a></li>
-<li><a href="https://www.doc.ic.ac.uk/~bglocker/deeplesion/index.html">spot lesion game based on CT scan</a>  <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">its technical report</a> <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">related theory</a></li>
+<li><a href="https://www.doc.ic.ac.uk/~bglocker/deeplesion/index.html">spot lesion game based on CT scan</a>  <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">its technical report</a> <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">related theory</a><br>
+<a href="https://www.doc.ic.ac.uk/~bglocker/deeplesion/index.html">study the implementation by viewing its source code and test by using inspect in browser(e.g. network section response,initiator and etc)</a><a href="https://www.w3schools.com/js/">javascript tutorial</a></li>
 </ol>
 <h2 id="reinforcement-learning-02-no-rough-reading-call-for-review">reinforcement learning: 0/2 (no rough reading, call for review)</h2>
 <ol>
@@ -34,6 +35,11 @@
 <ol>
 <li><a href="https://arxiv.org/pdf/1806.08089.pdf">reading &amp; courses</a></li>
 <li><a href="https://appsrv.cse.cuhk.edu.hk/~hchen/research/list_conferences.pdf">conference &amp; Journal</a></li>
+</ol>
+<h2 id="possible-new-ideas">possible new ideas:</h2>
+<ol>
+<li><a href="https://arxiv.org/pdf/1908.09791.pdf">chester's web doesnt support deployment in iphone browser may find some clues in Song Han's research papers</a><a href="https://arxiv.org/pdf/1909.06727.pdf"> another helpful reporot</a><a href="https://heartbeat.fritz.ai/machine-learning-on-mobile-devices-3-steps-for-deploying-it-in-your-apps-48a0a24364a8">possible guide focus on tensorflow</a></li>
+<li><a href="http://web.cs.ucla.edu/~tianyi.zhang/deep-learning-study.pdf">possible problem in dl summary</a></li>
 </ol>
 ]]></content>
     </entry>
@@ -117,18 +123,18 @@ for the third task in the description, extend our developped RL framework to hel
         </link>
         <updated>2020-03-23T14:11:22.000Z</updated>
         <content type="html"><![CDATA[<p>Deadlines:<br>
-3.25                           3007 chap 5 online test<br>
-3.30                           3007 lab 4<br>
-3.31                           submit summer research proposal &amp; fyp proposal<br>
+<s>3.25                           3007 chap 5 online test</s><br>
+<s>3.30                           3007 lab 4</s><strong>missed the ddl</strong><br>
+<s>3.31                           submit summer research proposal &amp; fyp proposal</s><br>
 4.8 10:30 am             2007 lab report &amp; contribution form<br>
-4.9                             submit summer research application<br>
-4.13-17 not decided  2003 online quiz(module 1-5 tut+lab)<br>
+<s>4.9                             submit summer research application</s><br>
+4.16 1130-1230am    2003 online quiz(module 1-5 tut+lab)<br>
 4.13 1030-1230am    3001 final  cil room 1 (lec1-5 tut1-8 lab1-4)<br>
-4.13                            3007 quiz1(scope chapt 1-5 excluding slides 18-40 in chap 3,1st half)<br>
+4.16  230-330pm       3007 quiz1(scope chapt 1-5 excluding slides 18-40 in chap 3,1st half)<br>
 4.13 130-230              2007 final quiz(scope week1-11 1st half:30%, 2nd half:70%)<br>
-4.14                            elite fyp form submission<br>
-4.16                            3007 quiz2(scope chapt 1-5 excluding slides 18-40 in chap 3,2nd half)<br>
-4.26                            3001 lab 4 report<br>
+<s>4.14                            elite fyp form submission</s><br>
+4.20                            3007 quiz2(scope chapt 1-5 excluding slides 18-40 in chap 3,2nd half)<br>
+<s>4.26                            3001 lab 4 report</s><strong>no need</strong><br>
 4.27 9:00 am              2003 lab</p>
 <p>Schedule:<br>
 date        must finish                                                     optional<br>
