@@ -2,13 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-03-28T10:01:33.961Z</updated>
+    <updated>2020-03-31T08:56:20.397Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[Summer Research Reading List]]></title>
+        <id>https://stupime.github.io/post/summer-research-reading-list/</id>
+        <link href="https://stupime.github.io/post/summer-research-reading-list/">
+        </link>
+        <updated>2020-03-31T08:29:20.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="papers-02">Papers: 0/2</h2>
+<ol>
+<li><a href="http://www.cse.cuhk.edu.hk/~qdou/papers/2019/Incorporating%20Temporal%20Prior%20from%20Motion%20Flow%20for%20Instrument%20Segmentation%20in%20Minimally%20Invasive%20Surgery%20Video.pdf">Temporal Prior for segementaion</a></li>
+<li><a href="http://www.cse.cuhk.edu.hk/~qdou/papers/2020/Multi-task%20recurrent%20convolutional%20network%20with%20correlation%20loss%20for%20surgical%20video%20analysis.pdf">New network combining tool detection and phase recognition</a></li>
+</ol>
+<h2 id="tools-templates-02">tools / templates: 0/2</h2>
+<ol>
+<li><a href="https://mlmed.org/tools/xray/">X-ray disease detection</a>  <a href="https://arxiv.org/pdf/1901.11210.pdf">its technical report</a></li>
+<li><a href="https://www.doc.ic.ac.uk/~bglocker/deeplesion/index.html">spot lesion game based on CT scan</a>  <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">its technical report</a> <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">related theory</a></li>
+</ol>
+<h2 id="reinforcement-learning-02-no-rough-reading-call-for-review">reinforcement learning: 0/2 (no rough reading, call for review)</h2>
+<ol>
+<li><a href="https://arxiv.org/pdf/1806.08089.pdf">base paper for rl with surgical gesture segmentation</a> <a href="https://github.com/Finspire13/RL-Surgical-Gesture-Segmentation">code</a></li>
+<li><a href="https://arxiv.org/pdf/2002.08718.pdf">Automatic Gesture Recognition in Robot-assisted Surgery with Reinforcement Learning and Tree Search</a></li>
+</ol>
+<h2 id="dl-reading-by-poineer-02">dl reading by poineer: 0/2</h2>
+<ol>
+<li><a href="https://arxiv.org/pdf/1806.08089.pdf">reading &amp; courses</a></li>
+<li><a href="https://appsrv.cse.cuhk.edu.hk/~hchen/research/list_conferences.pdf">conference &amp; Journal</a></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ml reading by NTU,tw]]></title>
         <id>https://stupime.github.io/post/ml-reading-by-ntutw/</id>
@@ -105,13 +133,13 @@ for the third task in the description, extend our developped RL framework to hel
 <p>Schedule:<br>
 date        must finish                                                     optional<br>
 T3.24      <s>2007 notes finish</s> + <s>tut finish</s>(<strong>wait for solution check</strong>)   |  lab finsh my part+py access web data<br>
-W3.25     <s><strong>3007 test</strong></s>+2003 notes+tut       |  2003 lab+py db finish half<br>
+W3.25     <s><strong>3007 test</strong></s>+2003 notes+<s>tut</s>       |  2003 lab+py db finish half<br>
 TH3.26    2003 &amp; 2007 lab finish+probability notes  |  py db finish<br>
 F3.27       compiler chap 1-3 notes tut lab | do lab 4<br>
 S3.28       compiler chap 4-5 notes lab 4   | tut<br>
 S3.29       <strong>3007 lab4</strong>2003 2007 py web db all finish probability notes | learn from data contd</p>
 <p>M3.30       <strong>3007 lab4</strong><br>
-T3.31       <strong>proposal</strong></p>
+T3.31       <s><strong>proposal</strong></s></p>
 ]]></content>
     </entry>
     <entry>
@@ -478,176 +506,6 @@ CSCI 4430 Data communication &amp; computer network</p>
 <ol start="8">
 <li><a href="https://www.xstt5.com/sanwen/1270/37639.html">北京法源寺</a> by <a href="https://en.wikipedia.org/wiki/Li_Ao">Ao Li 李敖</a>-4/75</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Manjaro struggling comedies]]></title>
-        <id>https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/</id>
-        <link href="https://stupime.github.io/post/mar-11-2020-how-i-fail-to-add-set-private-feature/">
-        </link>
-        <updated>2020-03-11T15:44:56.000Z</updated>
-        <content type="html"><![CDATA[<p>//  the figure in thumbnail is one of my life instructors 안재홍(Zaihong AN) in &quot;please answer 1988&quot;. whom i'd like to refer to as harecore winker.<br>
-Last update: 20:08, Mar 12, 2020<br>
-Mar 11, 2020</p>
-<h2 id="problem1-fail-to-add-private-post-feature-to-gridea-following-an-unmerged-pull-requests-commit-history-15-hr">Problem1: Fail to add private post feature to gridea following an unmerged pull request's commit history (1.5 hr)</h2>
-<ul>
-<li>
-<p>Background:</p>
-<ul>
-<li>sys: manjaro</li>
-<li>objective: gridea installation, setup sync cross win10 gridea and manjaro gridea, add set private feature</li>
-<li>given: gridea offical github installation instruction plus an unmerged pull request which added the goal feature</li>
-</ul>
-</li>
-<li>
-<p>Outcoume:</p>
-<ul>
-<li>installation success</li>
-<li>no support for sync cross win10 and linux,</li>
-<li>but could use setting path in gridea to access win10 gridea folders(<strong>only for dual boot users</strong>)</li>
-<li>fail to add private post feature following pr commits</li>
-</ul>
-</li>
-<li>
-<p>Analysis:</p>
-<ul>
-<li>possible unsuccessful reasons:</li>
-<li>pr not support for linux</li>
-<li>cant download code so have to manually modify one by one thus making it easier to miss sth</li>
-<li>file modification cross dual systems may cause problems</li>
-</ul>
-</li>
-<li>
-<p>Conclusion<br>
-It's totally time consuming and in vain to modify code by eyechecking each file, the lessons are</p>
-<ul>
-<li>not waste time on modifying files one by one using file comparison given by github.</li>
-<li>consider clearly if u need this feature for gridea it already offers hiden feature which serves similarly as setting private</li>
-</ul>
-</li>
-</ul>
-<p>Mar 12, 2020</p>
-<h2 id="problem-2-right-click-at-home-screen-then-change-mouse-actions-resulting-in-no-access-to-config-desktop-anymore">Problem 2: Right click at home screen, then change mouse actions, resulting in no access to config desktop anymore</h2>
-<ul>
-<li>Background:
-<ul>
-<li>plasma kde manjaro, problem above</li>
-<li>Objective:get config dekstop option back</li>
-</ul>
-</li>
-<li>Solution<br>
-cd ~/.config<br>
-mv plasma-org.kde.plasma.desktop-appletsrc plasma-org.kde.plasma.desktop-appletsrc-old<br>
-mv plasmashellrc ~/.config/plasmashellrc-old<br>
-// above will help all desktop seetings to default</li>
-</ul>
-<h2 id="problem-3-storage-not-enough">Problem 3: storage not enough</h2>
-<ul>
-<li>Bg: dual system allocate 78.9G to manjaro, use 85%</li>
-<li>Sol:
-<ul>
-<li>check filefilght in properties of allocated hard drive</li>
-<li>find gray part path which means unused/ $ du -sh /var/cache/pacman/pkg/</li>
-<li>rm them</li>
-<li>for my case, its because no cleaning pacman cache since start using manjaro, so<br>
-sudo pacman -Sc  //this cleans all uninstalled pkgs<br>
-sudo pacman -Scc // remove all pkgs regardless of installation status</li>
-</ul>
-</li>
-<li>Further improvement: auto clean<br>
-sudo mkdir /etc/pacman.d/hooks<br>
-sudo vim /etc/pacman.d/hooks/clean_package_cache.hook<br>
-paste below code<br>
-[Trigger]<br>
-Operation = Upgrade<br>
-Operation = Install<br>
-Operation = Remove<br>
-Type = Package<br>
-Target = *<br>
-[Action]<br>
-Description = Cleaning pacman cache...<br>
-When = PostTransaction<br>
-Exec = /usr/bin/paccache -r<br>
-save.</li>
-</ul>
-<h2 id="tools-debug-using-gdbthe-gnu-project-dbugger">Tools: Debug using GDB(The GNU Project Dbugger)</h2>
-<ul>
-<li>Background:
-<ul>
-<li>time-consuming to debug by print-compile-exec-check-print cycle;</li>
-<li>sometimes unable locate core dump in code</li>
-</ul>
-</li>
-<li>Objective:
-<ul>
-<li>enhance debug process w.o. complex setup</li>
-</ul>
-</li>
-<li>Tool: GDB
-<ul>
-<li>support C, C++,Go, Fortan, OpenCL</li>
-<li>easy to install and use</li>
-</ul>
-</li>
-<li>Instruction
-<ul>
-<li>Installation<br>
-gdb -v // check if already installed<br>
-sudo pacman -S gdb //installation</li>
-<li>Use
-<ul>
-<li>Given source code a.cpp/a.c<br>
-g++(gcc) a.cpp(a.c) -g -o a //include -g for gdb<br>
-./a<br>
-gdb a<br>
-will appear gdb interface &quot;(gdb) &quot;for gdb commands input and exec</li>
-<li>gdb commands
-<ul>
-<li>b num/func_name    // suspend program at line = num/ specified func</li>
-<li>run         //run a in gdb</li>
-<li>step || s       // step into the function(if any) in next line</li>
-<li>next || s                               //exec next line not into func</li>
-<li>until num/func_name            // exec until linenum =num/specified func</li>
-<li>list  || l            // list source code</li>
-<li>print var_name || p/d var_name<br>
-// print var value in singed int if p/d; unsigned int if p/u,similar for p/c,x,f</li>
-<li>backtree || bt                    // show trace of current position which funcs are in for now</li>
-<li>kill                  //stop exec</li>
-<li>quit                  //exit gdb</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Usage
-<ul>
-<li>reduce print-compile-exec cycle by simply print</li>
-<li>find core dump position by simply run</li>
-</ul>
-</li>
-</ul>
-<h2 id="commands-in-manjaro">Commands in manjaro</h2>
-<ul>
-<li>fd:0 - stdin, 1 - stdout, 2 - stderr;</li>
-<li>redirect: &quot;&gt;&quot;</li>
-<li>run in background: terminated by &quot;&amp;&quot;  // useful for ssh connection<br>
-command &gt; output.txt  // means redirect command outuput to output.txt<br>
-command &gt; output.txt  &amp; // means run last cmd in bg<br>
-command &gt; output.txt 2&gt;&amp;1 //means redirect both output and err message to the txt
-<ul>
-<li>close background process
-<ul>
-<li>$pgrep cmd eg. $pgrep wget (return pid)and $kill pid</li>
-<li>$pkill cmd eg. $pkill wget</li>
-<li>$jobs and $kill %jobid</li>
-<li>$fg jobid and $ctrl+c</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>$find path -name expression eg. find . -name *.cpp <strong>to be continued</strong></li>
-</ul>
 ]]></content>
     </entry>
 </feed>
