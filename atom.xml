@@ -2,13 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-04-02T06:18:00.520Z</updated>
+    <updated>2020-04-27T14:54:52.396Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
     <logo>https://stupime.github.io/images/avatar.png</logo>
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
+    <entry>
+        <title type="html"><![CDATA[Monthly Summary]]></title>
+        <id>https://stupime.github.io/post/monthly-summary/</id>
+        <link href="https://stupime.github.io/post/monthly-summary/">
+        </link>
+        <updated>2020-04-09T17:38:04.000Z</updated>
+        <content type="html"><![CDATA[<p>Long Term Goal:<br>
+April, 2020</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monthly Plan]]></title>
+        <id>https://stupime.github.io/post/monthly-plan/</id>
+        <link href="https://stupime.github.io/post/monthly-plan/">
+        </link>
+        <updated>2020-04-09T17:37:41.000Z</updated>
+        <content type="html"><![CDATA[<p>Long Term Goal:<br>
+April, 2020</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Summary]]></title>
+        <id>https://stupime.github.io/post/weekly-summary/</id>
+        <link href="https://stupime.github.io/post/weekly-summary/">
+        </link>
+        <updated>2020-04-09T17:37:23.000Z</updated>
+        <content type="html"><![CDATA[<p>4.10-4.12</p>
+<pre><code>1. All the presentations and Q&amp;A should be in English -- it's a good opportunity for everyone to enhance presentation skills.										
+2. Slides are not the key. Actually, as long as the motivations and main ideas can be discussed clearly, you can use the whiteboard.										
+3. Show experimental results if possible.										
+4. If no results, at least give a live demo of your program.										
+5. If one didn't submit the last weekly report on time, he or she will be asked to give a 15min presentation on recent progress (w. detailed slides).										</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Plan]]></title>
+        <id>https://stupime.github.io/post/weekly-plan/</id>
+        <link href="https://stupime.github.io/post/weekly-plan/">
+        </link>
+        <updated>2020-04-09T17:36:54.000Z</updated>
+        <content type="html"><![CDATA[<p>4.10-4.12</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Daily Summary]]></title>
+        <id>https://stupime.github.io/post/daily-summary/</id>
+        <link href="https://stupime.github.io/post/daily-summary/">
+        </link>
+        <updated>2020-04-09T17:36:22.000Z</updated>
+        <content type="html"><![CDATA[<p>4.10</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Daily Plan]]></title>
+        <id>https://stupime.github.io/post/daily-plan/</id>
+        <link href="https://stupime.github.io/post/daily-plan/">
+        </link>
+        <updated>2020-04-09T17:35:54.000Z</updated>
+        <content type="html"><![CDATA[<p>4.10</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Summer Research Reading List]]></title>
         <id>https://stupime.github.io/post/summer-research-reading-list/</id>
@@ -100,23 +161,6 @@ for the third task in the description, extend our developped RL framework to hel
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[insomnia raving]]></title>
-        <id>https://stupime.github.io/post/insomnia-raving/</id>
-        <link href="https://stupime.github.io/post/insomnia-raving/">
-        </link>
-        <updated>2020-03-24T04:08:42.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>Life is like a dream, u're always asleep, so dont consider insomnia.</li>
-<li>When u think u cant fall asleep, indeed u're in such a deep sleep mode that u mistake u're awake.</li>
-<li>What prevent u from having a good sleep, are not solely the noisy surroundings, but the cliche that u must sleep for at least 7 hrs every day without any break to obtain a high sleep quality.</li>
-<li>Do what u need to do, but dont be anxious about it.</li>
-<li>The so-called insomia is never that u feel like u didnt fall asleep yesterday, but the situation that u feel powerless tmr due to lack of sleep.</li>
-<li>be obtuse, be slow</li>
-<li>The reasons for insomnia lie in that u failed to concentrate on the sleep, which doesnt mean u should keep urself highly nervous and struggle to fall sleep but think nothing but it's time to sleep. In short, dont distract urself from falling asleep. One thing at one time. One common distraction is the electronics. However, the problem is not electronics themselves, instead caused by the notifications and curiousity about news, friends' moments, etc.</li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Plan]]></title>
         <id>https://stupime.github.io/post/plan/</id>
         <link href="https://stupime.github.io/post/plan/">
@@ -135,7 +179,7 @@ for the third task in the description, extend our developped RL framework to hel
 <s>4.14                            elite fyp form submission</s><br>
 4.20                            3007 quiz2(scope chapt 1-5 excluding slides 18-40 in chap 3,2nd half)<br>
 <s>4.26                            3001 lab 4 report</s><strong>no need</strong><br>
-4.27 9:00 am              2003 lab</p>
+4.27 9:00 am              <s>2003 lab</s></p>
 <p>Schedule:<br>
 date        must finish                                                     optional<br>
 T3.24      <s>2007 notes finish</s> + <s>tut finish</s>(<strong>wait for solution check</strong>)   |  lab finsh my part+py access web data<br>
@@ -148,372 +192,6 @@ S3.29       <strong>3007 lab4</strong>2003 2007 py web db all finish probability
 T3.31       <s><strong>proposal</strong></s><br>
 W4.1        <s>3001 chap1</s> <s>summer research application</s><br>
 T4.2         <s>3001 chap2</s> 3001 chap3 <strong>2007 lab5</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python notes]]></title>
-        <id>https://stupime.github.io/post/python-notes/</id>
-        <link href="https://stupime.github.io/post/python-notes/">
-        </link>
-        <updated>2020-03-20T06:17:20.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>int,float,string,boolean(True/False),None(Absence of value,initialize flag first time for find min/max)</li>
-</ol>
-<h2 id="operator">operator</h2>
-<ol start="2">
-<li>is, is not(only use for True, False, None;much stronger(both value &amp; object/type) (in)equality than == ,!=(only value)),and,or(<strong>check first if pass skip second expression</strong>),not</li>
-<li>in &quot;char/substring in string&quot; -&gt;True/False</li>
-</ol>
-<h2 id="control-flow">Control Flow</h2>
-<ol start="4">
-<li>sequencial</li>
-<li>conditional statement:
-<ul>
-<li>colan, indent, deindent</li>
-<li>if elif</li>
-<li>try A except B : if A works skip B, if A doesnt work, skip A do B //INSURANCE POLICY, make program not stop with traceback...but continue execution //if code after B relies on A, add quit() in B</li>
-</ul>
-</li>
-<li>iteration
-<ul>
-<li>while ...: -indefinite</li>
-<li>for i <strong>in</strong> collections(eg. list,lines in file,char in string): -definite iterate over members in a set</li>
-</ul>
-</li>
-<li>store and use
-<ul>
-<li>str = input()</li>
-<li>char or int = min(),max()</li>
-<li>int(),float()  //int part of it, no rounding</li>
-<li>def func(alias...) block only remember for later use not execute; not necessarily at the beginning</li>
-</ul>
-</li>
-</ol>
-<h2 id="string">string</h2>
-<ol start="8">
-<li>String
-<ul>
-<li>read input() and convert int()/float()</li>
-<li>index [x] from 0, x cant be out of range</li>
-<li>len(str)</li>
-<li>loop through: prefer &quot;for c <strong>in</strong> str:...&quot;</li>
-<li>slicing:str[a:b]: up to but not including; b could out of range; if no a/b,means a = 0,b = <strong>len(str)</strong>(not len-1,so include the ending)</li>
-<li>cancatenation: +</li>
-<li>in</li>
-<li>comparason: ==&gt;&lt;</li>
-<li>str lib(str itself <strong>immutable</strong>, these methods <strong>return a copy</strong>)
-<ul>
-<li>str.lower()/upper() /capitalize()</li>
-<li>str.find(substr) return first occurence's start index of substr in str,if no -1 <strong>used together with slice</strong> optional, 2nd para is for starting position</li>
-<li>str.replace(oldsub,newsub) find all occurences of old and replace with the new</li>
-<li>str.lstrip()/rstrip()/strip() remove left/right/both whitespaces(space/tab/newline) in str</li>
-<li>str.start<strong>s</strong>with(str1) check if str starts with str1 return True/False</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="file-processing">File processing</h2>
-<ol start="9">
-<li>fhand = open(filename,mode) returns a handle, filename should be str(i.e.' ...'),mode(r:read,default;w:write), where a <strong>handle</strong> is like a porthole btw python &amp; file, <strong>not</strong> data in file,but a way to get data, print handle will output filename,mode,etc but not lines in file, it's treated as a <strong>sequence</strong> of lines-<strong>for loop</strong></li>
-<li>file structure: newline:\n single char <strong>print() add newline automatically on purpose</strong></li>
-<li>read file
-<ul>
-<li>line by line: handle = open(filename) for line in handle:... <strong>line contains newline at end</strong></li>
-<li>the whole content(newline included): ... str = handle.read(), if need print, remember to erase right newline by str= str.rstrip(),or else double blank lines will appear due to print</li>
-</ul>
-</li>
-</ol>
-<h2 id="data-structure">Data Structure</h2>
-<p>(<em>variable design,collection,how put in/get back out</em>)<br>
-12. list: anything(not necessarily same type, even another list/empty acceptable) in brackets [..,..,..,.]<br>
-1. internal structure<br>
-* initialize an empty list: list = list(); constants: lidt = [a,b,c...]<br>
-* print([.....]) output the same [.....]<br>
-* put out index list[i],i from 0<br>
-* <strong>mutable</strong> change by assigning element by index list[i]=...<br>
-* len() #(elements)<br>
-* range(i) returns a list from 0 up to(but not including) i<br>
-* range(len(str)) for counted for loop<br>
-2. operations<br>
-* cantanation + lista+listb-&gt;[listaelements...listbelements...]<br>
-* slice as str<br>
-* list.append() add element to the tail<br>
-* del list[i] remove i-th element<br>
-* <strong>in</strong> as str<br>
-* list.sort() <strong>since list is mutable, sort method changes itself nstead of returning a copy--&gt;indeed <em>NO</em> return value</strong> could set (reverse = True) to sort from high to low <strong>sort letters in str:</strong> ' '.join(sorted(str))<br>
-* min(l),max(l),sum(l)<br>
-3. interact with str<br>
-* str.split() return a list whose elements are substrings of str. splited by space <strong>conbine with for loop with line into pieces</strong></p>
-<ol start="13">
-<li>
-<p>dictionary(2nd collection, key-value,{key:value,key1:value1...})</p>
-<ol>
-<li>internal structure
-<ul>
-<li>initialize empty:d = dict()/d={}; costants:d = {k:v,k:1v1...}; key,value not necessarily string-int</li>
-<li>append/insert: d[key] = value, mutable overwrite before value</li>
-<li>lookup-tag(index by key) d[key]</li>
-<li>unordered</li>
-<li>in , not in</li>
-</ul>
-</li>
-<li>applications:
-<ul>
-<li>each word count  by dict.<strong>get</strong>*(key,default_al)<br>
-branch for in and not in keys<br>
-or <strong>dict.get(key,default_val)</strong>   # same effect as above: if not in set as default; if in do...</li>
-<li>convet dict to list
-<ul>
-<li>list(dict)-&gt;list of keys</li>
-<li>dict.keys()/values() -&gt; list of keys/values</li>
-<li>dict.items() -&gt; list of (key,value) pairs(tuples) e.g. [(k,v),(k1.v1)]</li>
-</ul>
-</li>
-<li>loop through(default loop on keys of dict)
-<ul>
-<li>for key in dict: ...</li>
-<li>for key,value in dict.items()  go through all key-value pairs, key pair change simultaneously(where dict.items() returns a list of two-tuples)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p>tuple(more efficient version of list which is unmodifiable,temporary use)</p>
-<ol>
-<li>internal structure
-<ul>
-<li>initialize t = (...,...,...), empty tuple t =()/tuple()</li>
-<li>immutable cant sort/append/reverse</li>
-<li>index t[i]</li>
-</ul>
-</li>
-<li>operations:
-<ul>
-<li>max(t) -&gt;max of its elements</li>
-<li>t.count(v) -&gt; return num of v occurences</li>
-<li>t,index(v) -&gt; return index of 1st occurence of v, <strong>if no raise exception</strong></li>
-<li>assignment (x,y) = (v1,v2) -&gt;x =v1,y=v2 simultaneously</li>
-<li>comparison: left to right (view lfh as most-significance )</li>
-<li>sort list of tuples: by sorted(list)
-<ul>
-<li>sort dict from key: 1. get list = dict.items(),2. sorted(list)</li>
-<li>sort dict by value: 1.reverse k-v by using a temporary list l=list() for k,v in d.items(): l.append( (v,k) ) 2. sorted(l,reverse = true) sort from v to key, <strong>reverse means from high to low</strong>
-<ul>
-<li>application: top k key-value pairs</li>
-<li>improvement: sl= sorted([(v,k) for k,v in dict.iterms()]) by using a dynamic list(which means for all(v,k) s.t. for k,v in d.items()) then for v,k in sl: print(k,v)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="regex">regex</h2>
-<p>(<em>for data validation search extract</em>)<br>
-15. to use,import re<br>
-16. re.search('regex',str) return True/False whether match<br>
-17. re.findall('regex',str) return a list (empty list possible) containing all substrs complying regex in str(extract data,pulling out)<br>
-18. cheat sheet<br>
-* \s :any whtespace char<br>
-* \S any non-whitespace char<br>
-* * and + by default match greedily(as long as possible), by adding ? behind to avoid the greed *? and +?(prefer shortest matching <strong>starting from left to right</strong>)<br>
-* match always start from left, non-greedy means if there exist two/more match choose shortest one<br>
-* parenthesis() in regex is for stating extracting start and end position i.e. which part to extract e.g. 's([0-9]+)@.+' extract sid from culink email<br>
-* [^ ] any single char but not space caret^ means not</p>
-<h2 id="access-web-data-tcpip">Access web data TCP/IP</h2>
-<p><em>(allow pipe/socket btw applications-we designed http which defines when what how order... many things in interchange - request sent,data received,parse data(simply by urllib)-html nasty to handle(simply use beautifulsoup))</em></p>
-<ol>
-<li>Socket
-<ul>
-<li>socket is an endpoint of bidirectional inter-process communication flow</li>
-<li>http request process</li>
-</ul>
-</li>
-</ol>
-<pre><code class="language-python">        import socket
-        mysock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)  #create object
-        mysock.connect(hostnamestr, portnum) #connect socket
-        mysock.send(encodedstr) 
-#send http request command which needs encode
-#(WHY? code in python is unicode we need to change it to UTF-8 bytes as command)
-        while True:
-            data = mysock.recv(512)
-            if len(data) &lt; 1
-                break
-        print(data.decode()) #receive data from server and set receive limit 512,
-        #if eof break,decode by default utf-8
-    mysock.close()
-</code></pre>
-<p>improved version(process as <em>''internet file''</em>):</p>
-<pre><code class="language-python">import urllib.request, urllib.parse, urllib.error
-filehandle = urllib.request.urlopen('url')
-#return bytes of before outcome
-#but keeps header, only return data
-#two ways 1. line by line
-for line in filehandle:
-    print(line.decode().strip())#decode from bytes to unicode
-#2.read all
-str = filehandle.read()
-from bs4 import BeautifulSoup
-soup = BeautifulSoup(str,'html.parser')
-#then use beautifulsoup process html and retrive data(e.g. links)
-#retrive all achor tags
-tags = soup('a')  **return a list of bs4 objects**
-for tag in tags:
-    print(tag.get('href',None))    **builtin method of bs4 class**
-</code></pre>
-<p>for http<strong>s</strong> add</p>
-<pre><code>import ssl
-#no need to figure out, just for ignoring ssl certificate error
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
-...urllib.......urlopen('url',**context = ctx**).read()
-</code></pre>
-<ol start="2">
-<li>unicode chars:
-<ul>
-<li>to enable all chars from all over the world could be used-&gt;<strong>unicode</strong> which is a <strong>char set</strong> with order</li>
-<li>with unicode, encoding char with fixed length may either too long(utf-32)/not enough-&gt; utf-8 which enables char length be a varible accordingly <strong>utf-8 is a encoding method change unicode to bytes</strong> <em>decode change bytes to unicode</em></li>
-<li>in py3 all strings are unicode, out of our computer e.g. network/database they're bytes in utf-8</li>
-</ul>
-</li>
-<li>urllib handles all above socket,connect,send,recv stuff</li>
-<li>bs4 handles all decode  html-parse stuff
-<ul>
-<li>soup = BeautifulSoup(str,'html.parser')</li>
-<li>methods:</li>
-<li>soup('a') returns a list of tag objects(kind of similar to dict), then could for loop and tag.get('href',None) to fetch urls in html</li>
-<li>tag.contents returns a list of contents</li>
-</ul>
-</li>
-</ol>
-<h2 id="data-intetrchange-btw-applications">data intetrchange btw applications</h2>
-<p>(<em>fromat:XML, JSON</em>)</p>
-<h2 id="tips">tips</h2>
-<ol>
-<li>guardian in string/list:</li>
-</ol>
-<pre><code class="language-python">    if len(str)&lt;1: continue
-    if len(l)&lt;3 or l[2]!='a': ... list.append(l[2])  
-    # put len chekc first to avoid index out of bound
-</code></pre>
-<ol start="2">
-<li>index not allowed for nonexist element for str,list, dict; use in instead</li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chicken Soup for My Soul]]></title>
-        <id>https://stupime.github.io/post/quoteschicken-soup-for-the-soul/</id>
-        <link href="https://stupime.github.io/post/quoteschicken-soup-for-the-soul/">
-        </link>
-        <updated>2020-03-19T01:40:01.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Nothing in the world can take the place of persistence.<br>
-Talent will not, nothing is more common than unsuccessful men with talent.<br>
-Genius will not, unrewarded genius is almost a proverb.<br>
-Education will not, the world is full of enducated failures.<br>
-Persistence and determination alone are omnipotent.</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tentative summer travel plan]]></title>
-        <id>https://stupime.github.io/post/tentative-summer-travel-plan/</id>
-        <link href="https://stupime.github.io/post/tentative-summer-travel-plan/">
-        </link>
-        <updated>2020-03-17T03:01:19.000Z</updated>
-        <content type="html"><![CDATA[<p>#plan a<br>
-northwestern route:<br>
-xi'an-&gt;xining - by air<br>
-xining(ta'er temple) -&gt; <strong>qinghai lake</strong>*-&gt;<strong>chakayan lake</strong>* (-&gt; tuosu lake)-&gt;dachaidan lake -drive<br>
-dachaidan* -&gt; <strong>nanbaxian yadan/shuishang yadan</strong>-&gt;nanjin moutain (-&gt; yangguan)-&gt;dunhuang - drive<br>
-dunhuang -&gt;<strong>mogaoku#</strong> (-&gt; mingsha moutain) -&gt; <strong>colorful(qicai) danxia/pingshanhu canyon^</strong> -&gt; qilian grassland(flower sea availble in July &amp; August only) -&gt; zhuoer mountain* -&gt; xining-dirve^/public transportation<br>
-xining -&gt; xi'an -by air</p>
-<p>Notation:<br>
-*means starry sky shooting location<br>
-^measn preferred option<br>
-#means needing to book in advance</p>
-<p>Car renting option:<br>
-<a href="https://order.zuche.com/cardetail-870?t=1&amp;stock=1">宝沃BX5</a><br>
-715+2700/100<em>10</em>6.3 = 2416<br>
-Tickets/person:<br>
-50+70+200+100=420<br>
-lodging:<br>
-150*6=900</p>
-<p><a href="http://www.mafengwo.cn/gonglve/ziyouxing/260026.html">Starry sky shooting skills by 小蚂蚁</a></p>
-<ol>
-<li>选择手动对焦，并对焦至无穷远。微弱的星光是无法用来自动对焦滴。</li>
-<li>将ISO感光度设置在1600-3200左右，光圈调整到镜头的最大值。</li>
-<li>因为地球自传的关系，快门时间过长会导致星星的位移，所以快门时间在20-25秒为宜。</li>
-<li>夜间光线非常暗，所以光学取景器几乎是不能用的，只能盲拍，需要多试几次调整构图。<br>
-老司机们还分享了一个进阶拍摄技巧，小伙伴们可以用延时功能拍摄大量的照片，后期将所有照片叠加，可以得到完整星轨的照片，当然也能把原片转换成视频，就能得到一段惊艳的星空移动的动态视频啦。</li>
-</ol>
-<p>#plan b<br>
-qingzang railway -&gt; kunlun mountains -&gt; lhasa</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tentative final year class schedule]]></title>
-        <id>https://stupime.github.io/post/tentative-final-year-class-schedule/</id>
-        <link href="https://stupime.github.io/post/tentative-final-year-class-schedule/">
-        </link>
-        <updated>2020-03-13T06:33:22.000Z</updated>
-        <content type="html"><![CDATA[<p>Term 1:<br>
-<strong>IERG 4160</strong>: Image &amp; video processing<br>
-IERG 3310: Computer network<br>
-<strong>FYP1</strong><br>
-<strong>ENGG 5103/CMSC 5724</strong>: data mining<br>
-ESTR 4106/CSCI 4180 Intro to cloud computing &amp; storage<br>
-ESTR 4104/CSCI 4160 Distributed and parallel computing<br>
-<strong>ENGG 5501: Optimization</strong><br>
-<strong>IERG 5130</strong>Model &amp; algo for ml<br>
-大英<br>
-Term 2:<br>
-ESTR 3180: <strong>PPL</strong><br>
-<strong>FYP2</strong><br>
-<strong>CSCI 3320</strong>:ML<br>
-<strong>IERG 5130</strong>Model &amp; algo for ml<br>
-<strong>ELEG 5491</strong>DL (if any)<br>
-<strong>IERG 6130</strong>RL<br>
-<strong>FH</strong><br>
-<strong>大英</strong><br>
-CSCI 4430 Data communication &amp; computer network</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My collections on research, learning, reading]]></title>
-        <id>https://stupime.github.io/post/my-collections-on-research-learning/</id>
-        <link href="https://stupime.github.io/post/my-collections-on-research-learning/">
-        </link>
-        <updated>2020-03-13T01:20:02.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="research">research</h2>
-<ol>
-<li><a href="http://www.cse.ust.hk/~dimitris/Instructions%20for%20PhD%20Students.pdf">instructions for phd students</a> by <a href="https://www.cse.ust.hk/faculty/dimitris/">Dimitris Papadias</a> -100%</li>
-<li><a href="https://yuandong-tian.com/five_year_summary_of_PhD.pdf">5-year-summary of phd</a> by <a href="https://yuandong-tian.com/">Yuandong Tian</a>- 100%</li>
-<li><a href="http://www.houxiaodi.com/assets/misc/manual.pdf">manual for survival in sjtu</a> by <a href="http://www.houxiaodi.com/">Xiaodi Hou</a> - 2.25/3.5</li>
-<li><a href="https://www.zhihu.com/question/51863955/answer/127888709">research directions for cv</a> by <a href="http://bzhou.ie.cuhk.edu.hk/">Bolei Zhou</a> -100%</li>
-</ol>
-<h2 id="mathematical-stuff-by-dahua-lin">mathematical stuff by Dahua Lin</h2>
-<ol start="4">
-<li><a href="https://dahuasky.wordpress.com/2009/01/22/%E5%9C%A8%E6%95%B0%E5%AD%A6%E7%9A%84%E6%B5%B7%E6%B4%8B%E4%B8%AD%E9%A3%98%E8%8D%A1/">dive in the mathmatical sea</a> by <a href="http://dahualin.org/">Dahua Lin</a> -0%</li>
-<li><a href="https://blog.csdn.net/hsslx/article/details/17074829">Dahua's new thinking on math</a> by <a href="http://dahualin.org/">Dahua Lin</a> -0%</li>
-<li><a href="https://www.douban.com/note/42142976/">Dahua's suggestions on math reference books</a> by <a href="http://dahualin.org/">Dahua Lin</a> -0%</li>
-</ol>
-<h2 id="multi-task-management">multi-task management</h2>
-<ol start="7">
-<li><a href="https://www.zhihu.com/question/374401049/answer/1055275763">concrete solution to handle multiple tasks efficiently</a> by <a href="https://yuandong-tian.com/">Yuandong Tian</a>- 100%</li>
-</ol>
-<h2 id="readings">readings</h2>
-<ol start="8">
-<li><a href="https://www.xstt5.com/sanwen/1270/37639.html">北京法源寺</a> by <a href="https://en.wikipedia.org/wiki/Li_Ao">Ao Li 李敖</a>-4/75</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
