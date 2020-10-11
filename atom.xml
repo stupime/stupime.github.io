@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stupime.github.io</id>
     <title>Wang Wei&apos;s Homepage</title>
-    <updated>2020-10-07T14:29:32.680Z</updated>
+    <updated>2020-10-11T15:59:03.230Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stupime.github.io"/>
     <link rel="self" href="https://stupime.github.io/atom.xml"/>
@@ -10,12 +10,50 @@
     <icon>https://stupime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Wang Wei&apos;s Homepage</rights>
     <entry>
+        <title type="html"><![CDATA[Food Journal 5]]></title>
+        <id>https://stupime.github.io/post/food-journal-5/</id>
+        <link href="https://stupime.github.io/post/food-journal-5/">
+        </link>
+        <updated>2020-10-11T15:58:48.000Z</updated>
+        <content type="html"><![CDATA[<p>5</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Food Journal 4]]></title>
+        <id>https://stupime.github.io/post/food-journal-4/</id>
+        <link href="https://stupime.github.io/post/food-journal-4/">
+        </link>
+        <updated>2020-10-11T15:58:33.000Z</updated>
+        <content type="html"><![CDATA[<p>4</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Food Journal 3]]></title>
+        <id>https://stupime.github.io/post/food-journal-3/</id>
+        <link href="https://stupime.github.io/post/food-journal-3/">
+        </link>
+        <updated>2020-10-11T15:58:19.000Z</updated>
+        <content type="html"><![CDATA[<p>3</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Food Journal 2]]></title>
+        <id>https://stupime.github.io/post/food-journal-2/</id>
+        <link href="https://stupime.github.io/post/food-journal-2/">
+        </link>
+        <updated>2020-10-11T14:19:20.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Food Journal 1]]></title>
         <id>https://stupime.github.io/post/food-journal-1/</id>
         <link href="https://stupime.github.io/post/food-journal-1/">
         </link>
-        <updated>2020-10-07T14:27:56.000Z</updated>
-        <content type="html"><![CDATA[<p>my lunch~</p>
+        <updated>2020-10-01T14:27:56.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://stupime.github.io/post-images/1602425876054.jpeg" alt="" loading="lazy"><br>
+<img src="https://stupime.github.io/post-images/1602425919803.jpeg" alt="" loading="lazy"><br>
+<img src="https://stupime.github.io/post-images/1602425926967.jpeg" alt="" loading="lazy"><br>
+<img src="https://stupime.github.io/post-images/1602425933757.jpeg" alt="" loading="lazy"><br>
+<img src="https://stupime.github.io/post-images/1602425954180.jpeg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -68,105 +106,6 @@ April, 2020</p>
         </link>
         <updated>2020-04-09T17:36:22.000Z</updated>
         <content type="html"><![CDATA[<p>4.10</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Daily Plan]]></title>
-        <id>https://stupime.github.io/post/daily-plan/</id>
-        <link href="https://stupime.github.io/post/daily-plan/">
-        </link>
-        <updated>2020-04-09T17:35:54.000Z</updated>
-        <content type="html"><![CDATA[<p>4.10</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Summer Research Reading List]]></title>
-        <id>https://stupime.github.io/post/summer-research-reading-list/</id>
-        <link href="https://stupime.github.io/post/summer-research-reading-list/">
-        </link>
-        <updated>2020-03-31T08:29:20.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="papers-02">Papers: 0/2</h2>
-<ol>
-<li><a href="http://www.cse.cuhk.edu.hk/~qdou/papers/2019/Incorporating%20Temporal%20Prior%20from%20Motion%20Flow%20for%20Instrument%20Segmentation%20in%20Minimally%20Invasive%20Surgery%20Video.pdf">Temporal Prior for segementaion</a></li>
-<li><a href="http://www.cse.cuhk.edu.hk/~qdou/papers/2020/Multi-task%20recurrent%20convolutional%20network%20with%20correlation%20loss%20for%20surgical%20video%20analysis.pdf">New network combining tool detection and phase recognition</a></li>
-</ol>
-<h2 id="tools-templates-02">tools / templates: 0/2</h2>
-<ol>
-<li><a href="https://mlmed.org/tools/xray/">X-ray disease detection</a>  <a href="https://arxiv.org/pdf/1901.11210.pdf">its technical report</a></li>
-<li><a href="https://www.doc.ic.ac.uk/~bglocker/deeplesion/index.html">spot lesion game based on CT scan</a>  <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">its technical report</a> <a href="https://pdfs.semanticscholar.org/ea57/0ea492d6eefa30d457d2e4ebaac7396d53d2.pdf">related theory</a><br>
-<a href="https://www.doc.ic.ac.uk/~bglocker/deeplesion/index.html">study the implementation by viewing its source code and test by using inspect in browser(e.g. network section response,initiator and etc)</a><a href="https://www.w3schools.com/js/">javascript tutorial</a></li>
-</ol>
-<h2 id="reinforcement-learning-02-no-rough-reading-call-for-review">reinforcement learning: 0/2 (no rough reading, call for review)</h2>
-<ol>
-<li><a href="https://arxiv.org/pdf/1806.08089.pdf">base paper for rl with surgical gesture segmentation</a> <a href="https://github.com/Finspire13/RL-Surgical-Gesture-Segmentation">code</a></li>
-<li><a href="https://arxiv.org/pdf/2002.08718.pdf">Automatic Gesture Recognition in Robot-assisted Surgery with Reinforcement Learning and Tree Search</a></li>
-</ol>
-<h2 id="dl-reading-by-poineer-02">dl reading by poineer: 0/2</h2>
-<ol>
-<li><a href="https://arxiv.org/pdf/1806.08089.pdf">reading &amp; courses</a></li>
-<li><a href="https://appsrv.cse.cuhk.edu.hk/~hchen/research/list_conferences.pdf">conference &amp; Journal</a></li>
-</ol>
-<h2 id="possible-new-ideas">possible new ideas:</h2>
-<ol>
-<li><a href="https://arxiv.org/pdf/1908.09791.pdf">chester's web doesnt support deployment in iphone browser may find some clues in Song Han's research papers</a><a href="https://arxiv.org/pdf/1909.06727.pdf"> another helpful reporot</a><a href="https://heartbeat.fritz.ai/machine-learning-on-mobile-devices-3-steps-for-deploying-it-in-your-apps-48a0a24364a8">possible guide focus on tensorflow</a></li>
-<li><a href="http://web.cs.ucla.edu/~tianyi.zhang/deep-learning-study.pdf">possible problem in dl summary</a></li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ml reading by NTU,tw]]></title>
-        <id>https://stupime.github.io/post/ml-reading-by-ntutw/</id>
-        <link href="https://stupime.github.io/post/ml-reading-by-ntutw/">
-        </link>
-        <updated>2020-03-26T12:50:56.000Z</updated>
-        <content type="html"><![CDATA[<p>預備知識</p>
-<p>作業零 (機率統計、線性代數、微分之基本知識)</p>
-<p>參考書籍</p>
-<p>Learning from Data: A Short Course , Abu-Mostafa, Magdon-Ismail, Lin, 2013.</p>
-<p>經典文獻</p>
-<p>F. Rosenblatt. The perceptron: A probabilistic model for information storage and organization in the brain. Psychological Review, 65(6):386-408, 1958. (第二講：Perceptron 的出處)</p>
-<p>W. Hoeffding. Probability inequalities for sums of bounded random variables. Journal of the American Statistical Association, 58(301):13–30, 1963. (第四講：Hoeffding's Inequality)</p>
-<p>Y. S. Abu-Mostafa, X. Song , A. Nicholson, M. Magdon-ismail. The bin model, 1995. (第四講：bin model 的出處)</p>
-<p>V. Vapnik. The nature of statistical learning theory, 2nd edition, 2000. (第五到八講：VC dimension 與 VC bound 的完整數學推導及延伸)</p>
-<p>Y. S. Abu-Mostafa. The Vapnik-Chervonenkis dimension: information versus complexity in learning. Neural Computation, 1(3):312-317, 1989. (第七講：VC Dimension 的概念與重要性)</p>
-<p>參考文獻</p>
-<p>S. I. Gallant. Perceptron-based learning algorithms. IEEE Transactions on Neural Networks, 1(2):179-191, 1990. (第二講：pocket 的出處，注意到實際的 pocket 演算法比我們介紹的要複雜)</p>
-<p>R. Xu, D. Wunsch II. Survey of clustering algorithms. IEEE Transactions on Neural Networks 16(3), 645-678, 2005. (第三講：Clustering)</p>
-<p>X. Zhu. Semi-supervised learning literature survey. University of Wisconsin Madison, 2008. (第三講：Semi-supervised)</p>
-<p>Z. Ghahramani. Unsupervised learning. In Advanced Lectures in Machine Learning (MLSS ’03), pages 72–112, 2004. (第三講：Unsupervised)</p>
-<p>L. Kaelbling, M. Littman, A. Moore. reinforcement learning: a survey. Journal of Artificial Intelligence Research, 4: 237-285. (第三講：Reinforcement)</p>
-<p>A. Blum. On-Line algorithms in machine learning. Carnegie Mellon University,1998. (第三講：Online)</p>
-<p>B. Settles. Active learning literature survey. University of Wisconsin Madison, 2010. (第三講：Active)</p>
-<p>D. Wolpert. The lack of a priori distinctions between learning algorithms. Neural Computation, 8(7): 1341-1390. (第四講：No free lunch 的正式版)</p>
-<p>T. M. Cover. Geometrical and statistical properties of systems of linear inequalities with applications in pattern recognition. IEEE Transactions on Electronic Computers, 14(3):326–334, 1965. (第五到六講：Growth Function)</p>
-<p>B. Zadrozny, J. Langford, N. Abe. Cost sensitive learning by cost-proportionate example weighting. IEEE International Conference on Data Mining, 2003. (第八講：Weighted Classification)</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Interview Preparation]]></title>
-        <id>https://stupime.github.io/post/interview-preparation/</id>
-        <link href="https://stupime.github.io/post/interview-preparation/">
-        </link>
-        <updated>2020-03-26T09:46:29.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="pass">pass!</h2>
-<ol>
-<li><strong>reasons</strong> for selecting me/this project:<br>
-I'm interested in the intersection of computer vison and healthcare. Specifically, I want to use image analysis for disease analysis and video analysis for patient movement supervision to help take off some burdens from physicians/nurses. (Compared to classic cv problems, I think this research direction has more direct benefits in real life.)</li>
-<li>what expect to learn, most appealing aspect in this project<br>
-finish the project requirements and produce some valuable results, find the important problem and existing solutions in this field.</li>
-<li>plan of further study, career goal:<br>
-in short term, i hope to produce some results in this summer.If possible, I wish I could continue my research in your lab and try to publish one valuable paper in my final year. in the long run, i want to pursue a phd degree and become a researcher.</li>
-<li>what you have learnt in the past: research experience, technical skills(ML, Data Structure)<br>
-konwledge: basic ai fundamental course, ml course, currently taking rl course, basic math,<br>
-have to admit im just a beginner level, but i'd like to learn and i have the determination and  persistence to make up what i lacked before the start of our research<br>
-i totally have two <strong>research experiences</strong>:<br>
-the first one is in my first year's summer. The topic is encode method to make message correctly transfered in noisy channel. My main work is to use matlab to test performance of the methods and visualize them.<br>
-My second experience is about layout decomposition probelm in circuit design. The problem could be mapped to a complex version of coloring problem. In theoretical level, I together with a postgraduate student revisited one famous paper in that filed, we modified the cost function and fixed some fault in the algorithm. in programming, we added some new features to a existing framework. And we're cunrrently preparing for submission to a conference.</li>
-<li>your questions: sell your knowledge from reading on this specific field.data, could you please recommend some readings which're must knows for this project?<br>
-will i supervised by phd?<br>
-i noticed that there exists 3 tasks, is it for our selection or we need to finish all the three task by oneself.<br>
-for the third task in the description, extend our developped RL framework to help surgical decision making, does the framework refers to that one in your paper RL and tree search? if so is our task to optimize this framework or apply it to the decision problem?</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
